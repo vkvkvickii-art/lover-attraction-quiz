@@ -1,0 +1,3512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>测测你最容易吸引什么样的恋人 · 心动磁场档案</title>
+  <meta name="description" content="15道真实大白话恋爱细节与相处直觉测试，解锁你的六维魅力磁场与最容易对你上头的命定恋人类型。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23B5546A'/%3E%3Cstop offset='100%25' stop-color='%237B567B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23FFFDFC'%3E✦%3C/text%3E%3C/svg%3E" />
+  <style>
+/* ==========================================================================
+   《测测你最容易吸引什么样的恋人》 — 法式电影感 · 微醺浪漫杂志视觉系统
+   配色：丝绒暖杏白 · 暮色玫瑰粉 · 微醺紫罗兰 · 香槟细金 · 深浓可可墨
+   ========================================================================== */
+
+:root {
+  --bg-outer: #F5EDE9;
+  --bg-card: #FDFAF8;
+  --bg-soft: #F8F1EE;
+  --bg-tint: #FBF4F4;
+
+  --ink-900: #2A1F23;
+  --ink-700: #5B4A51;
+  --ink-500: #8D7A82;
+  --ink-300: #C8B8BE;
+  --ink-100: #EFE6E8;
+
+  --rose: #A84C60;
+  --rose-deep: #8D3B4D;
+  --rose-soft: rgba(168, 76, 96, 0.09);
+  --rose-border: rgba(168, 76, 96, 0.28);
+
+  --violet: #6D597A;
+  --violet-soft: rgba(109, 89, 122, 0.09);
+
+  --champagne: #C49E6C;
+  --champagne-light: #DFC7A7;
+  --champagne-soft: rgba(196, 158, 108, 0.14);
+
+  --grad-romantic: linear-gradient(135deg, #B5546A 0%, #7B567B 100%);
+  --grad-soft-glow: radial-gradient(circle at 18% 12%, rgba(181, 84, 106, 0.14) 0%, transparent 48%),
+                    radial-gradient(circle at 86% 20%, rgba(109, 89, 122, 0.13) 0%, transparent 48%),
+                    radial-gradient(circle at 50% 92%, rgba(196, 158, 108, 0.14) 0%, transparent 55%);
+
+  --font-serif: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", "Didot", "Bodoni MT", Georgia, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+
+  --radius-xl: 26px;
+  --radius-lg: 18px;
+  --radius-md: 13px;
+  --radius-pill: 999px;
+
+  --shadow-editorial: 0 22px 54px rgba(58, 34, 43, 0.09), 0 4px 14px rgba(58, 34, 43, 0.04);
+  --shadow-subtle: 0 6px 20px rgba(58, 34, 43, 0.05);
+  --ease-silk: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-outer);
+  background-image: var(--grad-soft-glow);
+  background-attachment: fixed;
+  color: var(--ink-900);
+  font-family: var(--font-sans);
+  line-height: 1.68;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px 52px;
+  overflow-x: hidden;
+}
+
+/* 顶部法式杂志刊头 */
+.top-masthead {
+  width: 100%;
+  max-width: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px 14px;
+  color: var(--ink-500);
+  font-size: 0.76rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.masthead-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--rose);
+}
+
+/* 主舞台容器 */
+.app-stage {
+  width: 100%;
+  max-width: 660px;
+  position: relative;
+}
+
+.view-section {
+  display: none;
+  animation: softReveal 0.52s var(--ease-silk) forwards;
+}
+
+.view-section.active {
+  display: block;
+}
+
+@keyframes softReveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.992);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 丝绒杂志卡片外框 */
+.velvet-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-xl);
+  padding: 9px;
+  box-shadow: var(--shadow-editorial);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  position: relative;
+}
+
+.velvet-card-inner {
+  border-radius: calc(var(--radius-xl) - 6px);
+  border: 1px solid var(--champagne-light);
+  background:
+    radial-gradient(circle at 90% 6%, rgba(181, 84, 106, 0.06) 0%, transparent 42%),
+    radial-gradient(circle at 8% 92%, rgba(109, 89, 122, 0.06) 0%, transparent 45%),
+    linear-gradient(180deg, #FFFDFC 0%, #FDFAF8 100%);
+  padding: 38px 34px;
+  position: relative;
+}
+
+/* 微醺玫瑰金徽章印记 */
+.aura-badge-stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  background: var(--grad-romantic);
+  color: #FFFDFC;
+  font-family: var(--font-serif);
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  box-shadow: 0 6px 16px rgba(168, 76, 96, 0.24);
+  user-select: none;
+}
+
+/* ==========================================================================
+   首页 View (Home)
+   ========================================================================== */
+.hero-header {
+  text-align: center;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--ink-100);
+  position: relative;
+}
+
+.hero-header::after {
+  content: "✦";
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-card);
+  padding: 0 12px;
+  color: var(--champagne);
+  font-size: 0.85rem;
+}
+
+.editorial-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--rose);
+  background: var(--rose-soft);
+  border: 1px solid var(--rose-border);
+  border-radius: var(--radius-pill);
+  padding: 5px 16px;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.hero-en-sub {
+  display: block;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--champagne);
+  letter-spacing: 0.16em;
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.72rem, 5.2vw, 2.45rem);
+  font-weight: 700;
+  color: var(--ink-900);
+  line-height: 1.34;
+  letter-spacing: 0.04em;
+}
+
+.hero-title .highlight-rose {
+  background: var(--grad-romantic);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--rose);
+}
+
+.hero-quote {
+  margin: 26px auto 24px;
+  max-width: 510px;
+  text-align: center;
+  font-size: 0.96rem;
+  color: var(--ink-700);
+  line-height: 1.9;
+}
+
+/* 三格杂志参数栏 */
+.spec-pills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 22px 0 26px;
+}
+
+.spec-pill {
+  background: var(--bg-soft);
+  border: 1px solid var(--ink-100);
+  border-radius: var(--radius-md);
+  padding: 13px 10px;
+  text-align: center;
+}
+
+.spec-pill-num {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--rose);
+  margin-bottom: 2px;
+}
+
+.spec-pill-label {
+  font-size: 0.76rem;
+  color: var(--ink-500);
+}
+
+/* 十种恋人类型预览胶囊 */
+.roster-preview {
+  background: var(--bg-tint);
+  border: 1px dashed var(--champagne-light);
+  border-radius: var(--radius-lg);
+  padding: 18px 18px;
+  margin-bottom: 28px;
+}
+
+.roster-preview-title {
+  font-family: var(--font-serif);
+  font-size: 0.82rem;
+  color: var(--violet);
+  text-align: center;
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
+}
+
+.roster-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.roster-chip {
+  font-size: 0.8rem;
+  color: var(--ink-700);
+  background: #FFFFFF;
+  border: 1px solid var(--ink-100);
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+}
+
+/* 按钮体系 */
+.cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-primary {
+  appearance: none;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: var(--grad-romantic);
+  color: #FFFDFC;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  padding: 16px 42px;
+  width: 100%;
+  max-width: 340px;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-silk);
+  box-shadow: 0 10px 24px rgba(168, 76, 96, 0.26);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(168, 76, 96, 0.34);
+  filter: brightness(1.03);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  appearance: none;
+  background: #FFFFFF;
+  border: 1px solid var(--ink-300);
+  border-radius: var(--radius-pill);
+  color: var(--ink-700);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 12px 22px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--rose);
+  color: var(--rose);
+  background: var(--bg-tint);
+}
+
+.resume-banner {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.84rem;
+  color: var(--violet);
+  background: var(--violet-soft);
+  border: 1px solid rgba(109, 89, 122, 0.2);
+  border-radius: var(--radius-pill);
+  padding: 8px 18px;
+}
+
+.resume-banner.visible {
+  display: inline-flex;
+}
+
+.resume-link {
+  background: none;
+  border: none;
+  color: var(--rose);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.84rem;
+}
+
+.disclaimer-note {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--ink-500);
+}
+
+/* ==========================================================================
+   答题页 View (Quiz)
+   ========================================================================== */
+.quiz-progress-panel {
+  margin-bottom: 26px;
+}
+
+.quiz-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.chapter-badge {
+  font-size: 0.8rem;
+  color: var(--rose);
+  background: var(--rose-soft);
+  padding: 3px 12px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.progress-counter {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  color: var(--ink-500);
+}
+
+.progress-counter strong {
+  color: var(--rose);
+  font-size: 1.15rem;
+}
+
+.progress-track {
+  width: 100%;
+  height: 7px;
+  background: var(--ink-100);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: var(--radius-pill);
+  background: var(--grad-romantic);
+  transition: width 0.38s var(--ease-silk);
+}
+
+.question-stage {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.question-stage.anim-next {
+  animation: glideNext 0.34s var(--ease-silk);
+}
+
+.question-stage.anim-prev {
+  animation: glidePrev 0.34s var(--ease-silk);
+}
+
+@keyframes glideNext {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes glidePrev {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.question-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.14rem, 3.4vw, 1.34rem);
+  font-weight: 700;
+  color: var(--ink-900);
+  line-height: 1.62;
+  margin-bottom: 22px;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  appearance: none;
+  width: 100%;
+  text-align: left;
+  background: var(--bg-soft);
+  border: 1px solid var(--ink-100);
+  border-radius: var(--radius-md);
+  padding: 15px 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-silk);
+  color: var(--ink-900);
+  font-family: var(--font-sans);
+  font-size: 0.96rem;
+  line-height: 1.56;
+}
+
+.option-btn:hover {
+  background: #FFF9FA;
+  border-color: var(--champagne);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-subtle);
+}
+
+.option-btn.selected {
+  background: #FFF5F7;
+  border-color: var(--rose);
+  box-shadow: 0 6px 18px rgba(168, 76, 96, 0.12);
+}
+
+.option-key {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--ink-300);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink-700);
+  background: #FFFFFF;
+  margin-top: 1px;
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover .option-key {
+  border-color: var(--rose);
+  color: var(--rose);
+}
+
+.option-btn.selected .option-key {
+  background: var(--grad-romantic);
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+.option-text {
+  flex: 1;
+}
+
+.quiz-nav-bar {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid var(--ink-100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.nav-link-btn {
+  appearance: none;
+  background: #FFFFFF;
+  border: 1px solid var(--ink-300);
+  border-radius: var(--radius-pill);
+  color: var(--ink-700);
+  font-size: 0.85rem;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.nav-link-btn:hover:not(:disabled) {
+  border-color: var(--rose);
+  color: var(--rose);
+}
+
+.nav-link-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.quiz-keyboard-tip {
+  font-size: 0.75rem;
+  color: var(--ink-500);
+}
+
+/* ==========================================================================
+   心动磁场解析过渡页 (Computing View)
+   ========================================================================== */
+.computing-box {
+  text-align: center;
+  padding: 68px 20px;
+}
+
+.heart-pulse-orb {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--grad-romantic);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.65rem;
+  margin: 0 auto 24px;
+  animation: auraPulse 1.05s ease-in-out infinite alternate;
+}
+
+@keyframes auraPulse {
+  from { transform: scale(0.93); box-shadow: 0 0 0 0 rgba(168, 76, 96, 0.28); }
+  to { transform: scale(1.06); box-shadow: 0 0 0 18px rgba(168, 76, 96, 0); }
+}
+
+.computing-title {
+  font-family: var(--font-serif);
+  font-size: 1.28rem;
+  color: var(--ink-900);
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+
+.computing-sub {
+  font-size: 0.88rem;
+  color: var(--ink-500);
+}
+
+/* ==========================================================================
+   结果海报卡片页 View (Romantic Archive Poster)
+   ========================================================================== */
+.poster-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-xl);
+  padding: 9px;
+  box-shadow: var(--shadow-editorial);
+  position: relative;
+}
+
+.poster-inner {
+  border-radius: calc(var(--radius-xl) - 6px);
+  border: 1px solid var(--champagne-light);
+  background:
+    radial-gradient(circle at 90% 7%, rgba(181, 84, 106, 0.10) 0%, transparent 40%),
+    radial-gradient(circle at 8% 48%, rgba(109, 89, 122, 0.08) 0%, transparent 44%),
+    linear-gradient(180deg, #FFFDFC 0%, #FCF7F5 50%, #FBF5F2 100%);
+  padding: 32px 28px 26px;
+  position: relative;
+}
+
+.poster-top-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.74rem;
+  color: var(--ink-500);
+  letter-spacing: 0.12em;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--ink-100);
+  margin-bottom: 22px;
+}
+
+.character-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.character-identity {
+  flex: 1;
+}
+
+.match-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--rose);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.match-badge-pct {
+  background: var(--grad-romantic);
+  color: #FFFFFF;
+  border-radius: var(--radius-pill);
+  padding: 2px 10px;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+}
+
+.character-name {
+  font-family: var(--font-serif);
+  font-size: clamp(1.65rem, 5.2vw, 2.25rem);
+  font-weight: 700;
+  color: var(--ink-900);
+  line-height: 1.24;
+  margin-bottom: 6px;
+}
+
+.character-courtesy {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--ink-500);
+  margin-bottom: 6px;
+}
+
+.character-verdict {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--violet);
+  letter-spacing: 0.06em;
+}
+
+.character-seal-pill {
+  flex-shrink: 0;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: var(--grad-romantic);
+  color: #FFFDFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  box-shadow: 0 8px 20px rgba(168, 76, 96, 0.24), inset 0 0 0 2px rgba(255, 255, 255, 0.38);
+}
+
+.character-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.char-tag {
+  font-size: 0.8rem;
+  color: var(--rose-deep);
+  background: #FFFFFF;
+  border: 1px solid var(--rose-border);
+  border-radius: var(--radius-pill);
+  padding: 4px 13px;
+}
+
+/* 电影台词感金句框 */
+.quote-scroll-box {
+  background: linear-gradient(135deg, rgba(181, 84, 106, 0.07) 0%, rgba(109, 89, 122, 0.07) 100%);
+  border: 1px solid rgba(196, 158, 108, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 18px 22px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.quote-scroll-text {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink-900);
+  line-height: 1.76;
+}
+
+/* 六维魅力雷达图面板 */
+.radar-panel {
+  display: grid;
+  grid-template-columns: 215px 1fr;
+  gap: 18px;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid var(--ink-100);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.radar-svg-wrap {
+  width: 100%;
+  max-width: 215px;
+  margin: 0 auto;
+}
+
+.radar-svg-wrap svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.dim-bars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.dim-bar-item {
+  display: grid;
+  grid-template-columns: 40px 1fr 32px;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+.dim-bar-name {
+  font-weight: 600;
+  color: var(--ink-700);
+}
+
+.dim-bar-track {
+  height: 6px;
+  background: var(--ink-100);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.dim-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: var(--grad-romantic);
+  transition: width 0.6s var(--ease-silk);
+}
+
+.dim-bar-val {
+  text-align: right;
+  font-family: var(--font-serif);
+  color: var(--ink-500);
+  font-weight: 600;
+}
+
+.runner-up-note {
+  margin-top: 10px;
+  padding-top: 9px;
+  border-top: 1px dashed var(--ink-100);
+  font-size: 0.78rem;
+  color: var(--ink-500);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.runner-up-note strong {
+  color: var(--rose);
+}
+
+/* 深度心动解析卡片 */
+.analysis-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.analysis-block {
+  background: #FFFFFF;
+  border: 1px solid var(--ink-100);
+  border-radius: var(--radius-md);
+  padding: 15px 18px;
+}
+
+.analysis-heading {
+  font-family: var(--font-serif);
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.heading-sparkle {
+  color: var(--rose);
+  font-size: 0.9rem;
+}
+
+.analysis-body {
+  font-size: 0.9rem;
+  color: var(--ink-700);
+  line-height: 1.72;
+}
+
+/* 趣味彩蛋 · 心动擦火花指南 */
+.easter-egg-panel {
+  background: linear-gradient(135deg, rgba(181, 84, 106, 0.05) 0%, rgba(196, 158, 108, 0.09) 100%);
+  border: 1px solid var(--champagne-light);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  margin-bottom: 20px;
+}
+
+.easter-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.easter-item {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--ink-100);
+  border-radius: 10px;
+  padding: 10px 13px;
+}
+
+.easter-label {
+  font-size: 0.76rem;
+  color: var(--rose);
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.easter-val {
+  font-size: 0.86rem;
+  color: var(--ink-900);
+  line-height: 1.56;
+}
+
+/* 海报底部二维码落款栏 */
+.poster-footer {
+  padding-top: 16px;
+  border-top: 1px solid var(--ink-100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.poster-footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.poster-footer-cta {
+  font-family: var(--font-serif);
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: var(--ink-900);
+}
+
+.poster-footer-sub {
+  font-size: 0.77rem;
+  color: var(--ink-500);
+  line-height: 1.45;
+}
+
+.poster-footer-pill {
+  align-self: flex-start;
+  color: var(--rose);
+  background: var(--rose-soft);
+  border: 1px solid var(--rose-border);
+  border-radius: var(--radius-pill);
+  padding: 2px 10px;
+  font-size: 0.71rem;
+  margin-top: 2px;
+}
+
+.poster-qr-frame {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.poster-qr-box {
+  width: 82px;
+  height: 82px;
+  padding: 4px;
+  background: #FFFFFF;
+  border: 1px solid var(--champagne-light);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(58, 34, 43, 0.06);
+}
+
+.poster-qr-box svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.poster-qr-caption {
+  font-size: 0.68rem;
+  color: var(--ink-500);
+}
+
+/* 海报外部按钮与链接设置栏 */
+.result-actions-bar {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.result-actions-bar .btn-primary {
+  max-width: none;
+  grid-column: 1 / -1;
+}
+
+.qr-url-config {
+  margin-top: 14px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px dashed var(--ink-300);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font-size: 0.8rem;
+  color: var(--ink-700);
+}
+
+.qr-url-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 7px;
+}
+
+.qr-url-input {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--ink-300);
+  border-radius: var(--radius-pill);
+  background: #FFFFFF;
+  color: var(--ink-900);
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  outline: none;
+}
+
+.qr-url-input:focus {
+  border-color: var(--rose);
+}
+
+.qr-url-btn {
+  appearance: none;
+  background: var(--violet);
+  color: #FFFFFF;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* 纯净截图模式 */
+body.clean-shot-mode {
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+body.clean-shot-mode .top-masthead,
+body.clean-shot-mode .result-actions-bar,
+body.clean-shot-mode .qr-url-config {
+  display: none !important;
+}
+
+.clean-shot-toast {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(42, 31, 35, 0.85);
+  color: #FFFDFC;
+  font-size: 0.8rem;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  z-index: 100;
+  cursor: pointer;
+}
+
+body.clean-shot-mode .clean-shot-toast {
+  display: block;
+}
+
+/* Toast 与海报弹窗 */
+.toast-msg {
+  position: fixed;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-16px);
+  background: var(--ink-900);
+  color: #FFFDFC;
+  border: 1px solid var(--champagne);
+  border-radius: var(--radius-pill);
+  padding: 10px 22px;
+  font-size: 0.86rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.26s var(--ease-silk);
+  z-index: 200;
+  box-shadow: 0 10px 26px rgba(42, 31, 35, 0.2);
+}
+
+.toast-msg.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.poster-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(34, 22, 27, 0.78);
+  z-index: 300;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.poster-modal.open {
+  display: flex;
+}
+
+.poster-modal-box {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--champagne-light);
+  max-width: 440px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.poster-modal-header {
+  padding: 13px 18px;
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--ink-100);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.poster-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.35rem;
+  color: var(--ink-700);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.poster-modal-body {
+  padding: 14px;
+  overflow-y: auto;
+}
+
+.poster-modal-body img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.poster-modal-tip {
+  padding: 10px 16px 14px;
+  text-align: center;
+  font-size: 0.79rem;
+  color: var(--ink-500);
+  background: var(--bg-soft);
+  border-top: 1px solid var(--ink-100);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 14px 10px 38px;
+  }
+
+  .velvet-card-inner {
+    padding: 26px 18px;
+  }
+
+  .spec-pills {
+    gap: 8px;
+  }
+
+  .quiz-keyboard-tip {
+    display: none;
+  }
+
+  .option-btn {
+    padding: 14px 14px;
+    gap: 11px;
+    font-size: 0.94rem;
+  }
+
+  .poster-inner {
+    padding: 24px 18px 20px;
+  }
+
+  .radar-panel {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .radar-svg-wrap {
+    max-width: 195px;
+  }
+
+  .poster-qr-box {
+    width: 74px;
+    height: 74px;
+  }
+
+  .result-actions-bar {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</head>
+<body>
+  <!-- 顶部法式杂志刊头 -->
+  <header class="top-masthead" aria-label="刊头信息">
+    <span class="masthead-brand">✦ L’Amour Archive</span>
+    <span>No. 15 · Romantic Magnetism</span>
+  </header>
+
+  <main class="app-stage">
+    <!-- ==================== 1. 测试首页 ==================== -->
+    <section id="view-home" class="view-section active" aria-labelledby="main-quiz-title">
+      <div class="velvet-card">
+        <div class="velvet-card-inner">
+          <div class="hero-header">
+            <span class="editorial-kicker">✦ 趣味情感魅力磁场测试 · 1分钟快测</span>
+            <span class="hero-en-sub">Who Falls For Your Aura?</span>
+            <h1 id="main-quiz-title" class="hero-title">
+              测测你最容易吸引<br /><span class="highlight-rose">什么样的恋人</span>
+            </h1>
+          </div>
+
+          <p class="hero-quote">
+            你以为的普通日常习惯、回消息节奏和不经意的小脾气，<br />
+            其实都在悄悄向外发射专属的心动信号。<br />
+            精选 15 道像朋友聊天一样的相处情境题，看看哪种人最容易栽在你手里。
+          </p>
+
+          <div class="spec-pills">
+            <div class="spec-pill">
+              <span class="spec-pill-num">15 题</span>
+              <span class="spec-pill-label">真实生活直觉单选</span>
+            </div>
+            <div class="spec-pill">
+              <span class="spec-pill-num">6 维度</span>
+              <span class="spec-pill-label">魅力磁场雷达图</span>
+            </div>
+            <div class="spec-pill">
+              <span class="spec-pill-num">10 类</span>
+              <span class="spec-pill-label">命定桃花画像</span>
+            </div>
+          </div>
+
+          <div class="roster-preview">
+            <div class="roster-preview-title">— 你可能会吸引的十种心动对象 —</div>
+            <div id="roster-chips" class="roster-chips"></div>
+          </div>
+
+          <div class="cta-group">
+            <button id="btn-start" type="button" class="btn-primary">
+              开启心动测试 ✦
+            </button>
+            <div id="resume-banner" class="resume-banner">
+              <span>上次还有未答完的题目（已答 <strong id="resume-count">0</strong>/15 题）</span>
+              <button id="btn-resume" type="button" class="resume-link">继续做题 →</button>
+            </div>
+          </div>
+
+          <p class="disclaimer-note">
+            注：本测试定位于趣味情感魅力探索，非严肃婚恋评估，亦非专业心理诊断。按第一直觉选最准哦。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. 逐题作答页 ==================== -->
+    <section id="view-quiz" class="view-section" aria-live="polite">
+      <div class="velvet-card">
+        <div class="velvet-card-inner">
+          <div class="quiz-progress-panel">
+            <div class="quiz-meta-row">
+              <span id="chapter-badge" class="chapter-badge">Part 01 · 聊天信号</span>
+              <span class="progress-counter">
+                <strong><span id="current-q-num">01</span></strong> / <span id="total-q-num">15</span>
+              </span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="15">
+              <div id="progress-fill" class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div id="question-stage" class="question-stage">
+            <div>
+              <h2 id="question-title" class="question-title"></h2>
+              <div id="options-list" class="options-list"></div>
+            </div>
+
+            <div class="quiz-nav-bar">
+              <button id="btn-prev" type="button" class="nav-link-btn" disabled>
+                ← 上一题
+              </button>
+              <span class="quiz-keyboard-tip">支持按键 A-D 快捷选择</span>
+              <button id="btn-next" type="button" class="nav-link-btn" disabled>
+                下一题 →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. 心动磁场计算过渡页 ==================== -->
+    <section id="view-computing" class="view-section" aria-live="polite">
+      <div class="velvet-card">
+        <div class="velvet-card-inner computing-box">
+          <div class="heart-pulse-orb">✦</div>
+          <h2 class="computing-title">正在捕捉你的心动引力场…</h2>
+          <p class="computing-sub">解析六维个人魅力信号，匹配最容易为你沦陷的那个人</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. 结果海报页 ==================== -->
+    <section id="view-result" class="view-section" aria-labelledby="res-name">
+      <article id="poster-card" class="poster-card">
+        <div class="poster-inner">
+          <div class="poster-top-meta">
+            <span>L’AMOUR ARCHIVE · 心动引力报告</span>
+            <span>《测测你最容易吸引什么样的恋人》</span>
+          </div>
+
+          <div class="character-hero">
+            <div class="character-identity">
+              <div class="match-kicker">
+                <span>✦ 最容易栽在你手里的恋人</span>
+                <span id="res-match-pct" class="match-badge-pct">磁场契合度 96%</span>
+              </div>
+              <h2 id="res-name" class="character-name">爹系/姐系引导型恋人</h2>
+              <span id="res-courtesy" class="character-courtesy">成熟控场 · 嘴硬心软的兜底掌舵人</span>
+              <div id="res-verdict" class="character-verdict">表面淡定挑剔 · 实则把你宠成小孩</div>
+            </div>
+
+            <div id="res-seal" class="character-seal-pill" aria-hidden="true">引导系</div>
+          </div>
+
+          <div id="res-tags" class="character-tags"></div>
+
+          <blockquote class="quote-scroll-box">
+            <p id="res-quote" class="quote-scroll-text"></p>
+          </blockquote>
+
+          <!-- 六维魅力雷达图面板 -->
+          <div class="radar-panel">
+            <div id="res-radar-wrap" class="radar-svg-wrap"></div>
+            <div>
+              <div id="res-dim-bars" class="dim-bars-list"></div>
+              <div id="res-runner-up" class="runner-up-note"></div>
+            </div>
+          </div>
+
+          <!-- 深度魅力解析模块 -->
+          <div class="analysis-sections">
+            <div class="analysis-block">
+              <h3 class="analysis-heading">
+                <span class="heading-sparkle">✨</span>
+                <span>你自身散发的致命吸引力</span>
+              </h3>
+              <p id="res-traits" class="analysis-body"></p>
+            </div>
+
+            <div class="analysis-block">
+              <h3 class="analysis-heading">
+                <span class="heading-sparkle">💘</span>
+                <span>为什么这类人最容易对你上头</span>
+              </h3>
+              <p id="res-reason" class="analysis-body"></p>
+            </div>
+
+            <div class="analysis-block">
+              <h3 class="analysis-heading">
+                <span class="heading-sparkle">🍬</span>
+                <span>在一起后的相处隐藏甜点</span>
+              </h3>
+              <p id="res-advantage" class="analysis-body"></p>
+            </div>
+          </div>
+
+          <!-- 趣味彩蛋 · 心动擦火花指南 -->
+          <div class="easter-egg-panel">
+            <h3 class="analysis-heading">
+              <span class="heading-sparkle">🎬</span>
+              <span>趣味彩蛋 · 恋爱擦火花指南</span>
+            </h3>
+            <div class="easter-grid">
+              <div class="easter-item">
+                <div class="easter-label">🥂 最容易擦出火花的场景</div>
+                <div id="res-scene" class="easter-val"></div>
+              </div>
+              <div class="easter-item">
+                <div class="easter-label">💓 最戳你的高甜相处瞬间</div>
+                <div id="res-sweetspot" class="easter-val"></div>
+              </div>
+              <div class="easter-item">
+                <div class="easter-label">💡 专属恋爱避雷小锦囊</div>
+                <div id="res-warning" class="easter-val"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 海报底部扫码栏 -->
+          <footer class="poster-footer">
+            <div class="poster-footer-left">
+              <div class="poster-footer-cta">扫码测测你最容易吸引什么样的恋人</div>
+              <div class="poster-footer-sub">15道大白话相处直觉题 · 解锁你的六维心动磁场与命定桃花</div>
+              <span class="poster-footer-pill">✦ 长按或扫码参与测试</span>
+            </div>
+            <div class="poster-qr-frame">
+              <div id="res-qr-box" class="poster-qr-box" aria-label="测试网页二维码"></div>
+              <span class="poster-qr-caption">扫码测心动引力</span>
+            </div>
+          </footer>
+        </div>
+      </article>
+
+      <!-- 海报外部操作栏 -->
+      <div class="result-actions-bar">
+        <button id="btn-save-poster" type="button" class="btn-primary">
+          保存带二维码高清海报（适合发小红书/朋友圈）
+        </button>
+        <button id="btn-copy-text" type="button" class="btn-secondary">
+          复制专属心动文案
+        </button>
+        <button id="btn-clean-shot" type="button" class="btn-secondary">
+          开启纯净截图模式
+        </button>
+        <button id="btn-restart" type="button" class="btn-secondary" style="grid-column: 1 / -1;">
+          重新测试一次
+        </button>
+      </div>
+
+      <!-- 二维码跳转链接自定义 -->
+      <div id="qr-url-config" class="qr-url-config">
+        <div>🔗 <strong>海报二维码跳转网址</strong>（部署上线后会自动识别公网地址，也可手动填入你的分享链接）：</div>
+        <div class="qr-url-row">
+          <input id="qr-url-input" type="url" class="qr-url-input" placeholder="例如 https://你的网站域名.com" />
+          <button id="btn-update-qr" type="button" class="qr-url-btn">更新二维码</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="clean-shot-toast" class="clean-shot-toast">
+    已隐藏操作按钮，可直接截屏分享 · 点击任意处恢复
+  </div>
+
+  <div id="toast-msg" class="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- 高清海报预览弹窗 -->
+  <div id="poster-modal" class="poster-modal" role="dialog" aria-modal="true" aria-labelledby="poster-modal-title">
+    <div class="poster-modal-box">
+      <div class="poster-modal-header">
+        <span id="poster-modal-title">专属心动档案海报已生成</span>
+        <button id="poster-modal-close" type="button" class="poster-modal-close" aria-label="关闭预览">×</button>
+      </div>
+      <div class="poster-modal-body">
+        <img id="poster-modal-img" alt="最容易吸引的恋人档案海报" />
+      </div>
+      <div class="poster-modal-tip">
+        电脑端已自动下载 PNG；手机端可长按上方图片保存至相册
+      </div>
+    </div>
+  </div>
+
+  <script>
+/**
+ * 《测测你最容易吸引什么样的恋人》核心配置、15道精选大白话题库与10类恋人档案
+ * 六大个人魅力与情感磁场维度：
+ * - zhiyu   (温柔治愈力): 柔软包容、让人卸下防备的情绪温度
+ * - duli    (清醒独立感): 边界清晰、不黏不作、自在松弛的酷感
+ * - xianhuo (热烈生命力): 鲜活有趣、爱笑有梗、感染力十足的能量
+ * - zhixing (智性神秘感): 有主见有深度、让人忍不住想探究的气场
+ * - tashi   (笃定安全感): 靠谱实在、情绪稳定、把日子过踏实的定力
+ * - langman (浪漫共情力): 细腻敏锐、懂氛围感、能捕捉微小情绪的灵气
+ */
+
+const QUIZ_CONFIG = {
+  // 默认指向你的 GitHub Pages 线上公开测试地址
+  defaultShareUrl: 'https://vkvkvickii-art.github.io/lover-attraction-quiz/'
+};
+
+const DIMENSIONS = [
+  { key: 'zhiyu',   name: '治愈', fullName: '温柔治愈力', desc: '让人感到被包容、愿意卸下防备的情绪温度' },
+  { key: 'duli',    name: '独立', fullName: '清醒独立感', desc: '不黏人、不内耗，保有自我节奏的松弛边界' },
+  { key: 'xianhuo', name: '鲜活', fullName: '热烈生命力', desc: '有趣有梗、真诚外放，能瞬间点亮气氛的活力' },
+  { key: 'zhixing', name: '智性', fullName: '智性神秘感', desc: '看事通透、有想法有层次，让人越品越上头的深度' },
+  { key: 'tashi',   name: '踏实', fullName: '笃定安全感', desc: '情绪稳定、说到做到，让人无比安心的靠谱感' },
+  { key: 'langman', name: '浪漫', fullName: '浪漫共情力', desc: '细腻敏感、懂仪式感与弦外之音的灵魂共鸣力' }
+];
+
+const QUESTIONS = [
+  // Part 01 · 聊天信号
+  {
+    id: 1,
+    chapter: 'Part 01 · 聊天信号',
+    question: '有好感的人半天没回你微信，结果你刷到他刚发了一条朋友圈，你第一反应是？',
+    options: [
+      { label: 'A', text: '行吧，直接把手机一扣干自己的事去，他不回我也绝不追着发', scores: { duli: 3, zhixing: 2, zhiyu: -2 } },
+      { label: 'B', text: '反手在他朋友圈底下点个赞或者评论调侃一句：“抓获失踪人口！”', scores: { xianhuo: 3, duli: 1, zhixing: -2 } },
+      { label: 'C', text: '心里有点小失落，会忍不住猜他是不是不想理我，但忍着不说', scores: { langman: 3, zhiyu: 2, duli: -3 } },
+      { label: 'D', text: '没多想，可能人家随手发完就去忙了，等他空了自然会回', scores: { tashi: 3, zhiyu: 2, langman: -2 } }
+    ]
+  },
+  {
+    id: 2,
+    chapter: 'Part 01 · 聊天信号',
+    question: '平时跟喜欢的人微信闲聊，你的聊天画风更像哪一种？',
+    options: [
+      { label: 'A', text: '表情包大户 + 分享欲爆棚，路上看见只小猫都要拍给他看', scores: { xianhuo: 3, langman: 2, duli: -2 } },
+      { label: 'B', text: '平时各忙各的不怎么刷屏，但一聊起来就能聊很深的话题，句句走心', scores: { zhixing: 3, duli: 3, xianhuo: -2 } },
+      { label: 'C', text: '温柔捧场王，不管对方抛什么话都不会让他掉地上，情绪价值拉满', scores: { zhiyu: 3, tashi: 2, duli: -1 } },
+      { label: 'D', text: '经常互甩搞笑视频和损人烂梗，聊着聊着就像在说相声', scores: { xianhuo: 3, duli: 1, langman: -3 } }
+    ]
+  },
+  {
+    id: 3,
+    chapter: 'Part 01 · 聊天信号',
+    question: '半夜十二点，你在朋友圈发了一首有点伤感或小众的歌，一般是因为？',
+    options: [
+      { label: 'A', text: '纯粹觉得前奏和旋律太绝了，大半夜刚好戳中那点微妙的氛围感', scores: { langman: 3, zhixing: 2, tashi: -1 } },
+      { label: 'B', text: '其实心里藏了点心事，暗戳戳希望某个人看到能来问我一句怎么了', scores: { langman: 3, zhiyu: 2, duli: -3, tashi: -1 } },
+      { label: 'C', text: '我几乎不干这事，半夜十二点要么在刷搞笑视频，要么早就睡着了', scores: { tashi: 3, duli: 2, langman: -3 } },
+      { label: 'D', text: '白天装大人太累了，深夜留一点只有自己懂的小情绪透透气', scores: { zhixing: 3, duli: 2, xianhuo: -2 } }
+    ]
+  },
+
+  // Part 02 · 社交气场
+  {
+    id: 4,
+    chapter: 'Part 02 · 社交气场',
+    question: '去参加一个有一半人都不认识的朋友聚会，你在局上通常是什么状态？',
+    options: [
+      { label: 'A', text: '热场小能手，没过半小时就能跟一桌子人加微信开玩笑了', scores: { xianhuo: 3, duli: 1, zhixing: -2 } },
+      { label: 'B', text: '安安静静坐在边上吃东西，别人主动跟我聊就礼貌笑笑，不凑热闹', scores: { duli: 3, zhixing: 2, xianhuo: -3 } },
+      { label: 'C', text: '默默递纸巾、倒水、照顾落单害羞的人，让大家坐着都不尴尬', scores: { zhiyu: 3, tashi: 2, duli: -1 } },
+      { label: 'D', text: '挑一两个看着最有意思的人深聊，其他吵吵闹闹的局自动屏蔽', scores: { zhixing: 3, langman: 2, tashi: -2 } }
+    ]
+  },
+  {
+    id: 5,
+    chapter: 'Part 02 · 社交气场',
+    question: '跟你混熟了之后，朋友们最常说对你的“反差印象”是哪句？',
+    options: [
+      { label: 'A', text: '“刚认识以为你挺高冷不好惹，熟了发现你其实特好说话、超温柔！”', scores: { zhixing: 2, zhiyu: 2, duli: 2, xianhuo: -2 } },
+      { label: 'B', text: '“看你平时大大咧咧没心没肺的，其实心思特别细，什么都懂！”', scores: { xianhuo: 3, langman: 2, tashi: -2 } },
+      { label: 'C', text: '“以为你是个软萌乖乖牌，没想到遇到大事比谁都冷静有主见！”', scores: { zhiyu: 2, duli: 3, zhixing: 2 } },
+      { label: 'D', text: '“你这人表里如一，刚认识觉得靠谱实在，处久了发现更靠谱！”', scores: { tashi: 3, zhiyu: 2, zhixing: -2, langman: -2 } }
+    ]
+  },
+  {
+    id: 6,
+    chapter: 'Part 02 · 社交气场',
+    question: '出门见有好感的人之前，你在穿搭和打扮上一般是什么路数？',
+    options: [
+      { label: 'A', text: '精心搭一套看似毫不费力、其实连香水味和发丝都算好的氛围感穿搭', scores: { langman: 3, zhixing: 2, tashi: -2 } },
+      { label: 'B', text: '干净舒服最重要，穿自己平时最自在好看的那套，不硬凹造型', scores: { tashi: 3, duli: 2, langman: -2 } },
+      { label: 'C', text: '走明艳元气或者很有辨识度的风格，让人老远一眼就能看到我', scores: { xianhuo: 3, duli: 1, zhiyu: -2 } },
+      { label: 'D', text: '温柔亲切没攻击性的色系，看着就让人觉得软乎乎很好亲近', scores: { zhiyu: 3, langman: 1, duli: -2 } }
+    ]
+  },
+
+  // Part 03 · 约会日常
+  {
+    id: 7,
+    chapter: 'Part 03 · 约会日常',
+    question: '跟暧昧对象第一次单独约会，下面四个安排你最喜欢哪个？',
+    options: [
+      { label: 'A', text: '吃完晚饭沿着江边或老街慢慢散步吹晚风，有一搭没一搭地聊天', scores: { langman: 3, zhiyu: 2, xianhuo: -1 } },
+      { label: 'B', text: '一起去游乐园、密室、电玩城或者看脱口秀，边玩边闹绝对不冷场', scores: { xianhuo: 3, tashi: 1, zhixing: -2 } },
+      { label: 'C', text: '找家安静有格调的小酒馆或独立书店咖啡馆，微醺着聊点走心话题', scores: { zhixing: 3, langman: 3, tashi: -2 } },
+      { label: 'D', text: '去吃一家口碑超好的地道馆子，吃饱喝足顺便逛逛超市，自然又踏实', scores: { tashi: 3, zhiyu: 2, langman: -2 } }
+    ]
+  },
+  {
+    id: 8,
+    chapter: 'Part 03 · 约会日常',
+    question: '两个人一起出去旅游，你更喜欢什么样的分工模式？',
+    options: [
+      { label: 'A', text: '对方把机酒路线全安排妥当，我只管背着小包跟在后面当开心果夸夸他', scores: { zhiyu: 2, xianhuo: 2, duli: -3, tashi: -1 } },
+      { label: 'B', text: '大攻略我来做主拍板，对方只要情绪稳定、帮提行李不扫兴就行', scores: { duli: 3, tashi: 3, langman: -2 } },
+      { label: 'C', text: '干脆不做死板攻略，睡到自然醒随心瞎逛，走到哪算哪更有惊喜感', scores: { langman: 3, xianhuo: 2, tashi: -3 } },
+      { label: 'D', text: '一人负责订票看路、一人负责找美食拍照，分工清楚配合默契', scores: { tashi: 3, duli: 2, zhixing: 1 } }
+    ]
+  },
+  {
+    id: 9,
+    chapter: 'Part 03 · 约会日常',
+    question: '对象最近连轴转加班特别忙，好几天没空好好陪你，你会怎么处理？',
+    options: [
+      { label: 'A', text: '正好跟朋友约饭、自己追剧健身，我的生活丰富着呢，一点不觉得空虚', scores: { duli: 3, xianhuo: 2, zhiyu: -2 } },
+      { label: 'B', text: '不去烦他，算准他下班时间点份热乎夜宵送到他楼下，抱一下就走', scores: { zhiyu: 3, tashi: 3, duli: 1 } },
+      { label: 'C', text: '嘴上懂事说“你先忙”，其实过了三天就开始委屈，希望他抽五分钟哄哄我', scores: { langman: 3, zhiyu: 2, duli: -3, tashi: -1 } },
+      { label: 'D', text: '发个搞笑表情包逗他开心，顺便帮他看看手里有没有我能搭把手分担的事', scores: { tashi: 2, xianhuo: 2, zhixing: 1 } }
+    ]
+  },
+
+  // Part 04 · 吵架磨合
+  {
+    id: 10,
+    chapter: 'Part 04 · 吵架磨合',
+    question: '两个人吵架僵住了，气氛降到冰点的时候，你一般怎么收场？',
+    options: [
+      { label: 'A', text: '最受不了冷战过夜，就算不是我的错，也会主动戳戳他递个台阶先软下来', scores: { zhiyu: 3, tashi: 2, duli: -2 } },
+      { label: 'B', text: '绝对不先低头，他冷我也冷，比耐心我还没输过谁，等他想通了来找我', scores: { duli: 3, zhixing: 2, zhiyu: -3 } },
+      { label: 'C', text: '只要对方随便找个借口问“饿不饿/喝不喝奶茶”，我立马顺坡下驴翻篇', scores: { xianhuo: 3, zhiyu: 2, zhixing: -2 } },
+      { label: 'D', text: '必须把前因后果和道理掰扯清楚、达成共识，不能糊里糊涂抱一下就混过去', scores: { zhixing: 3, tashi: 2, langman: -1 } }
+    ]
+  },
+  {
+    id: 11,
+    chapter: 'Part 04 · 吵架磨合',
+    question: '恋爱里如果对方踩了下面哪条线，会让你瞬间下头、好感清零？',
+    options: [
+      { label: 'A', text: '控制欲爆棚，天天查岗翻手机、管我穿什么跟谁玩，让人窒息', scores: { duli: 3, xianhuo: 2, tashi: -1 } },
+      { label: 'B', text: '遇到事只会逃避装死、不回消息玩冷暴力，半点担当都没有', scores: { tashi: 3, xianhuo: 1, zhixing: -1 } },
+      { label: 'C', text: '说话大脑空空没深度，或者审美俗气、完全听不懂我的梗和情绪', scores: { zhixing: 3, langman: 3, tashi: -2 } },
+      { label: 'D', text: '脾气暴躁爱说狠话，对我和身边服务员一点温柔耐心都没有', scores: { zhiyu: 3, langman: 1, duli: -1 } }
+    ]
+  },
+  {
+    id: 12,
+    chapter: 'Part 04 · 吵架磨合',
+    question: '当你在外面受了大委屈、心情特别丧的时候，你对另一半是怎么表现的？',
+    options: [
+      { label: 'A', text: '钻进他怀里大哭或者疯狂吐槽，急需他无条件站在我这边抱抱我、替我出气', scores: { zhiyu: 3, langman: 2, xianhuo: 1, duli: -3 } },
+      { label: 'B', text: '习惯自己先躲进壳里消化完，等情绪平复了再云淡风轻当个故事讲给他听', scores: { duli: 3, zhixing: 3, zhiyu: -2, xianhuo: -1 } },
+      { label: 'C', text: '拉着他去吃顿大餐或者喝一杯，只要他在旁边陪着玩一会儿就满血复活了', scores: { xianhuo: 3, tashi: 2, zhixing: -2 } },
+      { label: 'D', text: '把来龙去脉讲给他听，希望他能帮我理性分析一下破局办法', scores: { tashi: 2, zhixing: 3, langman: -2 } }
+    ]
+  },
+
+  // Part 05 · 心动与底色
+  {
+    id: 13,
+    chapter: 'Part 05 · 心动底色',
+    question: '当你发现自己对一个人有点上头、动心了，你的操作通常是？',
+    options: [
+      { label: 'A', text: '打直球！主动约吃饭、主动找话题，喜欢就大大方方让他知道', scores: { xianhuo: 3, duli: 1, zhixing: -3 } },
+      { label: 'B', text: '高端猎手往往以猎物的方式出现——制造偶遇和眼神拉丝，引他主动来追我', scores: { zhixing: 3, langman: 2, duli: 2, tashi: -3 } },
+      { label: 'C', text: '越喜欢越怂、越装镇定，表面上比对普通朋友还客气，心里早就小鹿乱撞了', scores: { langman: 2, zhiyu: 2, xianhuo: -3 } },
+      { label: 'D', text: '润物细无声地对他好，记住他的喜好照顾他，日久生情水到渠成', scores: { zhiyu: 3, tashi: 3, xianhuo: -1 } }
+    ]
+  },
+  {
+    id: 14,
+    chapter: 'Part 05 · 心动底色',
+    question: '下面四个瞬间，哪一个最容易让你心脏漏跳半拍、突然对人动心？',
+    options: [
+      { label: 'A', text: '遇到突发乱子大家都在慌，他淡定站出来三两下摆平说“别怕，交给我”的时候', scores: { zhiyu: 2, langman: 2, duli: -2, tashi: 2 } },
+      { label: 'B', text: '他在自己擅长的领域侃侃而谈、专注投入，眼里闪着自信光芒的时候', scores: { zhixing: 3, duli: 2, zhiyu: -1 } },
+      { label: 'C', text: '人群里无论什么时候回头，都发现他正笑盈盈地看着我、满眼偏爱的时候', scores: { langman: 3, xianhuo: 2, zhixing: -1 } },
+      { label: 'D', text: '冬天下班走出地铁口，看见他揣着热烤红薯在冷风里冲我挥手傻笑的时候', scores: { tashi: 3, zhiyu: 3, zhixing: -2 } }
+    ]
+  },
+  {
+    id: 15,
+    chapter: 'Part 05 · 心动底色',
+    question: '最后凭直觉选：在一段长期关系里，什么最能给你源源不断的安全感？',
+    options: [
+      { label: 'A', text: '事事有回应、件件有着落，说好几点来接我就绝不会迟到的靠谱行动', scores: { tashi: 3, zhiyu: 2, langman: -2 } },
+      { label: 'B', text: '我自己鼓鼓的钱包和随时敢转身离开的底气，安全感永远是自己给的', scores: { duli: 3, zhixing: 3, zhiyu: -2 } },
+      { label: 'C', text: '不管过了多久，他看我的眼神依然有热烈的心动、新鲜感和分享欲', scores: { langman: 3, xianhuo: 3, tashi: -2 } },
+      { label: 'D', text: '在他面前我可以卸下所有坚强伪装，哪怕犯蠢脆弱也知道他绝不会嫌弃我', scores: { zhiyu: 3, langman: 2, duli: -2 } }
+    ]
+  }
+];
+
+/**
+ * 10类最易吸引的恋人画像库
+ */
+const CHARACTERS = [
+  {
+    id: 'mentor',
+    name: '爹系/姐系引导型恋人',
+    courtesy: '成熟控场 · 嘴硬心软的兜底掌舵人',
+    title: '表面淡定挑剔 · 实则把你宠成小孩',
+    seal: '引导系',
+    accentColor: '#9E475B',
+    bias: -0.1122,
+    target: { zhiyu: 68, duli: 12, xianhuo: 62, zhixing: 26, tashi: 22, langman: 86 },
+    quote: '“嘴上嫌你迷糊没长心眼，却早就顺手把你前面的坑全填平了。”',
+    tags: ['成熟稳重', '嘴硬心软', '超强兜底力', '带你成长'],
+    traits: '你身上有一种未经世故打磨掉的纯真灵气与柔软感。你真诚、有感染力，偶尔遇到复杂麻烦事时会流露出一点让人心软的小迷糊或小脆弱——这种真实不做作的生命力，对成熟强大的引导型恋人来说简直是精准狙击。',
+    reason: '那些在社会上独当一面、习惯了照顾别人的“大魔王”，平时看腻了精明算计的人精；偏偏遇到鲜活柔软、懂得真诚依赖与赞美你的你时，保护欲和掌控欲会被瞬间激起，心甘情愿替你遮风挡雨。',
+    advantage: '你天生擅长激发强者的温柔一面，能毫不费力地让对方体会到“被需要、被崇拜”的满足感，越宠你他自己越有成就感。',
+    easterEgg: {
+      scene: '工作交流局、前辈带新人，或你遇到棘手难题求助时他顺手帮了一把',
+      sweetSpot: '一边叹气说“拿你没办法”，一边把剥好的虾和做好的攻略全推到你面前',
+      warning: '小心别把成熟照顾和“爱说教爹味控制狂”混为一谈，真正爱你的人会尊重你的意愿'
+    }
+  },
+  {
+    id: 'puppy',
+    name: '阳光直球小狗型恋人',
+    courtesy: '热烈真诚 · 满眼是你的快乐永动机',
+    title: '不管你在哪 · 第一眼永远奔向你',
+    seal: '直球系',
+    accentColor: '#C46851',
+    bias: 0.0889,
+    target: { zhiyu: 54, duli: 86, xianhuo: 18, zhixing: 80, tashi: 68, langman: 32 },
+    quote: '“所有人都猜你高冷难追，只有他捧着一腔滚烫真心，非要把你逗笑不可。”',
+    tags: ['打直球王者', '情绪超热烈', '黏人精反差', '满眼偏爱'],
+    traits: '你骨子里非常清醒独立，平时情绪内敛克制，不爱乱搞暧昧，自带一层淡淡的距离感。你越是淡定自持、不轻易对人热情，就越容易吸引那种阳光坦荡、精力旺盛的“直球小狗型”恋人前赴后继地凑上来。',
+    reason: '直球小狗天生对“神秘清冷又有主见”的人毫无抵抗力！你的淡定在他眼里是致命的酷，只要你偶尔冲他露出一个无奈又纵容的笑，他就能开心得在心里放三天烟花，死心塌地围着你转。',
+    advantage: '你的稳重刚好能稳住他的跳脱，而他的热烈直白又能融化你心底不轻易示人的孤独感，是天造地设的冷热互补。',
+    easterEgg: {
+      scene: '朋友聚会、运动户外局，你在角落安安静静待着，他主动凑过来找话聊',
+      sweetSpot: '秒回你的每一条消息，受了一点委屈只要你摸摸头夸一句就瞬间满血复活',
+      warning: '别总端着冷脸让他一个人唱独角戏，偶尔主动回应一次，小狗会更爱你十倍'
+    }
+  },
+  {
+    id: 'intellectual',
+    name: '智性恋高岭之花恋人',
+    courtesy: '外冷内热 · 只对你破例的清醒派',
+    title: '对世界疏离挑剔 · 唯独迷恋你的灵魂',
+    seal: '智性系',
+    accentColor: '#56597A',
+    bias: -0.0206,
+    target: { zhiyu: 16, duli: 96, xianhuo: 20, zhixing: 96, tashi: 62, langman: 56 },
+    quote: '“我们不用谁依附谁，但只要一开口聊天，就知道全世界只有你接得住我的频率。”',
+    tags: ['双强共振', '外冷内热', '审美与脑力齐飞', '极致专一'],
+    traits: '你拥有极强的自我边界感与独立思考能力，讨厌庸俗肤浅的套路和黏糊糊的情绪绑架。你活得通透体面，有自己专注热爱的领域，这种“不讨好任何人的清醒感”散发着高级而迷人的智性魅力。',
+    reason: '真正优秀的“高岭之花”慕强且挑剔，普通人的死缠烂打只会让他们退避三舍；唯独遇到同样聪明独立、聊得来深层话题又懂分寸的你，他们才会放下高冷防备，产生棋逢对手的强烈心动。',
+    advantage: '你们之间不需要费劲解释边界，既有各自独立闪耀的空间，又有精神高度契合的默契，感情极其稳固长久。',
+    easterEgg: {
+      scene: '行业合作、读书看展、深度讨论某个话题时眼神交汇的那一秒',
+      sweetSpot: '平时在外面冷静克制得像冰山，私下关起门来唯独对你流露出笨拙的反差温柔',
+      warning: '两个聪明人都太习惯克制独立，记得多创造一点感性的肢体拥抱与烟火日常'
+    }
+  },
+  {
+    id: 'guardian',
+    name: '温柔救赎守护型恋人',
+    courtesy: '情绪超稳 · 接住你所有脆弱的避风港',
+    title: '看穿你逞强的软肋 · 做你最安心的退路',
+    seal: '治愈系',
+    accentColor: '#735B82',
+    bias: -0.1102,
+    target: { zhiyu: 42, duli: 22, xianhuo: 76, zhixing: 44, tashi: 16, langman: 92 },
+    quote: '“在别人面前你尽管光芒万丈，累了随时转过身，我永远稳稳接住你。”',
+    tags: ['情绪稳定天花板', '极致耐心', '懂你的敏感', '事事有回应'],
+    traits: '你其实是个感知力很敏锐、对感情很走心的人。平时在人群里你可能活泼大方、很会照顾场面，但夜深人静时偶尔会有缺乏安全感、容易多想或内耗的脆弱时刻，渴望一份真正笃定不摇摆的偏爱。',
+    reason: '你身上“明明很敏感却努力表现得懂事鲜活”的特质，最容易打动内心温和强大、情绪极度稳定的守护者。他们能一眼看穿你笑容背后的疲惫，发自内心地想要给你一个永远不会落空的拥抱。',
+    advantage: '你丰富的情感和浪漫灵气让他的平淡生活变得鲜活多彩，而他如山海般的稳定包容刚好治愈你所有的不安。',
+    easterEgg: {
+      scene: '你状态低落或加班疲惫的深夜，他不讲大道理，只是默默陪在你身边听你说完',
+      sweetSpot: '不管你怎么闹小情绪都绝不冷暴力，永远温和坚定地告诉你“我在呢，别怕”',
+      warning: '珍惜对方稳稳的温柔，有需求直接说出来，别用反复推开试探来考验他的耐心'
+    }
+  },
+  {
+    id: 'poet',
+    name: '浪漫文艺灵魂伴侣',
+    courtesy: '极致共情 · 懂你所有欲言又止的知音',
+    title: '把平凡三餐四季 · 和你过成法式电影',
+    seal: '浪漫系',
+    accentColor: '#9E5872',
+    bias: 0.1423,
+    target: { zhiyu: 80, duli: 54, xianhuo: 24, zhixing: 84, tashi: 18, langman: 98 },
+    quote: '“你随口拍的一朵晚霞，他都能读懂你没说出口的那句想念。”',
+    tags: ['灵魂共振', '极致仪式感', '审美同频', '细腻入微'],
+    traits: '你有一颗极其细腻、丰盈又讲究美感的心。你对周遭的氛围、音乐、光影和人心微小的起伏有着天然的捕捉力，比起世俗冰冷的条件匹配，你更渴望那种一个眼神就能心领神会的深度精神连接。',
+    reason: '浪漫敏感的文艺灵魂一直在人群里寻找同类。当你不经意流露出独特的审美品味与温柔共情力时，就像在黑夜里亮起了一盏信号灯，会瞬间让同频的浪漫主义者为你深深着迷、视若珍宝。',
+    advantage: '你们谈恋爱绝对不会沦为枯燥的搭伙过日子，哪怕只是雨天一起去买把伞，都能聊出满屏粉红泡泡与诗意。',
+    easterEgg: {
+      scene: '独立书店、音乐节、小众展览，或者因为同一首歌、同一部电影聊到深夜',
+      sweetSpot: '记住每一个纪念日和你随口提过的愿望，手写信与小惊喜从不缺席',
+      warning: '风花雪月固然迷人，遇到柴米油盐的现实问题时记得两个人一起脚踏实地面对'
+    }
+  },
+  {
+    id: 'playmate',
+    name: '欢喜冤家最佳损友恋人',
+    courtesy: '互怼互宠 · 接住你所有烂梗的灵魂搭子',
+    title: '吵吵闹闹一辈子 · 和你在一起从不无聊',
+    seal: '搭子系',
+    accentColor: '#B85A6B',
+    bias: -0.0526,
+    target: { zhiyu: 54, duli: 68, xianhuo: 98, zhixing: 26, tashi: 38, langman: 18 },
+    quote: '“嘴上天天嫌弃你是笨蛋，别人要是敢说你半句不好，他第一个撸袖子急眼！”',
+    tags: ['搞笑搭子', '零包袱相处', '越怼越甜', '永远玩得来'],
+    traits: '你性格爽朗真实、幽默有梗，最讨厌矫揉造作的偶像剧套路和沉重压抑的苦情戏。跟你待在一起完全不用端着架子，你自带一种鲜活轻快的开心果磁场，走到哪都能把无聊的日子过出乐子。',
+    reason: '同样聪明有趣、热爱生活的人最容易被你的真实鲜活吸引！在你面前不用装深沉也不用猜心思，从饭搭子、游戏搭子一路互损互宠处成情侣，快乐直接翻倍。',
+    advantage: '友情打底的爱情拥有最无敌的抗风险力！没有隔夜仇，吵架三分钟就能因为一个搞笑表情包破功笑场。',
+    easterEgg: {
+      scene: '朋友攒局的桌游火锅、同组共事吐槽奇葩，或者老熟人天天斗图突然变了味',
+      sweetSpot: '无论半夜两点你想去吃烤串还是想疯玩，他永远一句“走啊谁怕谁”陪你到底',
+      warning: '平时互怼开玩笑惯了，到关键纪念日或认真表白时别害羞打岔，该甜的时候大胆甜'
+    }
+  },
+  {
+    id: 'protector',
+    name: '霸气护短行动派恋人',
+    courtesy: '少说多做 · 明目张胆偏爱你的实力派',
+    title: '不会花言巧语 · 但把最好的全都塞给你',
+    seal: '偏爱系',
+    accentColor: '#823B4A',
+    bias: 0.0198,
+    target: { zhiyu: 98, duli: 14, xianhuo: 78, zhixing: 16, tashi: 52, langman: 56 },
+    quote: '“我不擅长说一百句漂亮情话，但我所有的钱、时间和退路都写着你的名字。”',
+    tags: ['极度护短', '行动派天花板', '大方舍得', '满满安全感'],
+    traits: '你身上有着非常温暖柔软的情绪治愈力，待人真诚体贴、懂得感恩和珍惜别人的付出。你不会把别人的好当成理所当然，每次收到一点善意都会回馈甜甜的开心，让人特别想把全世界最好的东西捧到你面前。',
+    reason: '干脆利落、重情重义的行动派最吃“温柔甜妹/暖心伴侣”这一套！他们在外面雷厉风行硬邦邦，唯独遇到温柔贴心、会真心实意心疼他们的你，瞬间化为绕指柔，恨不得把你护在羽翼下谁也不许欺负。',
+    advantage: '你的温柔体贴能彻底抚平他的棱角与紧绷，而他直接实在的物质与行动偏爱，能让你在感情里半点苦都不吃。',
+    easterEgg: {
+      scene: '别人刁难你时他霸气出头解围，或者你无意中关心了他一句让他记了很久',
+      sweetSpot: '清空购物车从不含糊，对外永远无条件站你这边：“我家的人轮不到外人说”',
+      warning: '行动派有时候嘴笨不懂弯弯绕绕的浪漫暗示，想要什么直接撒娇明说效果最好'
+    }
+  },
+  {
+    id: 'cat',
+    name: '反差萌傲娇猫系恋人',
+    courtesy: '矜持慢热 · 私下偷偷黏你的猫系傲娇鬼',
+    title: '人前高贵冷艳 · 只有你能顺他的毛',
+    seal: '猫系',
+    accentColor: '#7D5A7A',
+    bias: 0.1297,
+    target: { zhiyu: 88, duli: 76, xianhuo: 10, zhixing: 54, tashi: 66, langman: 58 },
+    quote: '“才不是特意来接你的，只是刚好顺路……算了，手伸出来给你牵一下。”',
+    tags: ['傲娇反差萌', '慢热长情', '私下超黏人', '只信你一人'],
+    traits: '你为人温和踏实、情绪稳定又有耐心，没有咄咄逼人的侵略性，给人一种像午后阳光一样暖融融的安全感。你不会急功近利地逼迫别人交出真心，而是懂得安静温和地陪伴。',
+    reason: '防备心重、面子薄又慢热的“猫系恋人”，最怕油腻自来熟的人硬贴上来；只有你这种温柔恒定、永远不会突然凶他或丢下他的温暖体质，才能让他一点点卸下刺，变成只往你怀里钻的黏人小猫。',
+    advantage: '一旦把傲娇猫系恋人顺好毛，他们的忠诚度是1000%！别人看到的都是他的冷脸，只有你独享他撒娇打滚的反差可爱。',
+    easterEgg: {
+      scene: '长期共事、同窗或邻居日常相处，你几次不动声色的温和照顾让他悄悄沦陷',
+      sweetSpot: '嘴上说着“你好烦哦”，身体却诚实地往你身边贴，走哪都要牵着你的衣角',
+      warning: '猫系恋人自尊心强容易口是心非，看破别拆穿，顺着毛哄两句他啥都听你的'
+    }
+  },
+  {
+    id: 'homemaker',
+    name: '人间烟火踏实居家恋人',
+    courtesy: '三餐四季 · 把喜欢熬进热汤里的实在人',
+    title: '不玩暧昧虚招 · 只想和你认认真真过日子',
+    seal: '烟火系',
+    accentColor: '#A16752',
+    bias: -0.1516,
+    target: { zhiyu: 54, duli: 82, xianhuo: 24, zhixing: 18, tashi: 98, langman: 10 },
+    quote: '“外面的风浪再大，只要推开家门闻到他做的饭香，心就彻底落定了。”',
+    tags: ['情绪超稳', '顾家靠谱', '厨艺生活家', '奔着一辈子去'],
+    traits: '你活得非常清醒务实、脚踏实地，反感虚头巴脑的画饼拉扯和狗血折腾。你把自己的生活打理得井井有条，对待感情认真专一，向往的是两个人舒舒服服、安安稳稳把小日子过红火的真实幸福。',
+    reason: '靠谱顾家的实在人最欣赏你身上这份不作不闹、真诚通透的生活质感。你们三观一致、节奏合拍，不用费心猜忌试探，一拍即合就能开启热气腾腾的神仙眷侣日常。',
+    advantage: '神仙级的低内耗高幸福感组合！在一起不仅情绪舒坦，还能一起攒钱买房、把生活品质越过越高。',
+    easterEgg: {
+      scene: '靠谱熟人介绍、社区运动/兴趣班，或日常工作往来中发现彼此三观超合拍',
+      sweetSpot: '记得你的所有饮食忌口，冬天提前帮你暖好被窝，凡事把你放进未来规划里',
+      warning: '日子太安稳偶尔会少点波澜，节假日不妨主动约他出去旅旅游制造点新鲜浪漫'
+    }
+  },
+  {
+    id: 'charmer',
+    name: '致命引力推拉高手恋人',
+    courtesy: '张力拉满 · 棋逢对手的迷人危险派',
+    title: '万花丛中游刃有余 · 偏偏栽在你手里',
+    seal: '引力系',
+    accentColor: '#663F56',
+    bias: 0.0664,
+    target: { zhiyu: 14, duli: 90, xianhuo: 86, zhixing: 88, tashi: 14, langman: 68 },
+    quote: '“本来只想跟你玩场高手过招的游戏，没想到最后先动真心认输的人是我。”',
+    tags: ['性张力拉满', '高手过招', '浪子/浪女回头', '极致上头'],
+    traits: '你身上同时兼具鲜活明艳的生命力与清醒独立的野生酷感！你聪明、敢爱敢恨、拿得起放得下，绝不会在一段关系里卑微恋爱脑——这种“你很好，但我也随时玩得起”的潇洒气场，拥有致命的吸引力。',
+    reason: '那些魅力四射、见过世面的情场高手，最容易对乖巧顺从的人感到无聊，却唯独会被你这种又飒又鲜活、永远抓不住全貌的对手死死拿捏，越抓不住越上头，心甘情愿为你收心。',
+    advantage: '火花四溅、性张力拉满！你们在一起就像拍都市爱情大片，既有势均力敌的过招快感，又有极致的浪漫激情。',
+    easterEgg: {
+      scene: '微醺派对、创意圈子、旅行途中，第一眼对视就闻到了同类的危险迷人气息',
+      sweetSpot: '在别人面前游刃有余从不吃亏，唯独在你面前吃醋破防、乖乖交出主动权',
+      warning: '前期火花虽燃，确认长期关系前一定要考察他在低谷与平淡期能不能守住真诚'
+    }
+  }
+];
+
+/**
+ * 纯前端零依赖标准 QR Code 矩阵生成器 (ISO/IEC 18004, Byte Mode UTF-8, ECC Level M)
+ * 支持版本 1 ~ 10（最长可编码约 210 字节 URL），离线可用，无跨域限制
+ */
+(function (global) {
+  'use strict';
+
+  // Version 1..10 (ECC Level M): [totalCodewords, ecCodewordsPerBlock, numBlocksGroup1, dataCwGroup1, numBlocksGroup2, dataCwGroup2]
+  const VERSION_TABLE_M = [
+    null,
+    [26, 10, 1, 16, 0, 0],   // V1:  16 bytes max (14 chars)
+    [44, 16, 1, 28, 0, 0],   // V2:  28 bytes max (26 chars)
+    [70, 26, 1, 44, 0, 0],   // V3:  44 bytes max (42 chars)
+    [100, 18, 2, 32, 0, 0],  // V4:  64 bytes max (62 chars)
+    [134, 24, 2, 43, 0, 0],  // V5:  86 bytes max (84 chars)
+    [172, 16, 4, 27, 0, 0],  // V6: 108 bytes max (106 chars)
+    [196, 18, 4, 31, 0, 0],  // V7: 124 bytes max (122 chars)
+    [242, 22, 2, 38, 2, 39], // V8: 154 bytes max (152 chars)
+    [292, 22, 3, 36, 2, 37], // V9: 182 bytes max (179 chars)
+    [346, 26, 4, 43, 1, 44]  // V10:216 bytes max (213 chars)
+  ];
+
+  const ALIGNMENT_POS = [
+    null,
+    [],
+    [6, 18],
+    [6, 22],
+    [6, 26],
+    [6, 30],
+    [6, 34],
+    [6, 22, 38],
+    [6, 24, 42],
+    [6, 26, 46],
+    [6, 28, 50]
+  ];
+
+  // GF(256) 指数与对数表 (primitive polynomial 0x11D)
+  const GF_EXP = new Uint8Array(512);
+  const GF_LOG = new Uint8Array(256);
+  (function initGF() {
+    let x = 1;
+    for (let i = 0; i < 255; i++) {
+      GF_EXP[i] = x;
+      GF_LOG[x] = i;
+      x <<= 1;
+      if (x & 0x100) x ^= 0x11d;
+    }
+    for (let i = 255; i < 512; i++) {
+      GF_EXP[i] = GF_EXP[i - 255];
+    }
+  })();
+
+  function gfMul(a, b) {
+    if (a === 0 || b === 0) return 0;
+    return GF_EXP[GF_LOG[a] + GF_LOG[b]];
+  }
+
+  function rsGeneratorPoly(degree) {
+    let poly = [1];
+    for (let i = 0; i < degree; i++) {
+      const next = new Array(poly.length + 1).fill(0);
+      const root = GF_EXP[i];
+      for (let j = 0; j < poly.length; j++) {
+        next[j] ^= poly[j];
+        next[j + 1] ^= gfMul(poly[j], root);
+      }
+      poly = next;
+    }
+    return poly;
+  }
+
+  function rsComputeRemainder(data, ecLen) {
+    const gen = rsGeneratorPoly(ecLen);
+    const rem = new Array(ecLen).fill(0);
+    for (let i = 0; i < data.length; i++) {
+      const factor = data[i] ^ rem[0];
+      rem.shift();
+      rem.push(0);
+      if (factor !== 0) {
+        for (let j = 0; j < ecLen; j++) {
+          rem[j] ^= gfMul(gen[j + 1], factor);
+        }
+      }
+    }
+    return rem;
+  }
+
+  function utf8Bytes(str) {
+    if (typeof TextEncoder !== 'undefined') {
+      return Array.from(new TextEncoder().encode(str));
+    }
+    const out = [];
+    for (let i = 0; i < str.length; i++) {
+      let c = str.charCodeAt(i);
+      if (c < 0x80) out.push(c);
+      else if (c < 0x800) out.push(0xc0 | (c >> 6), 0x80 | (c & 0x3f));
+      else out.push(0xe0 | (c >> 12), 0x80 | ((c >> 6) & 0x3f), 0x80 | (c & 0x3f));
+    }
+    return out;
+  }
+
+  function chooseVersion(byteLen) {
+    for (let v = 1; v <= 10; v++) {
+      const info = VERSION_TABLE_M[v];
+      const dataCapacityBytes = info[2] * info[3] + info[4] * info[5];
+      const lenBits = v <= 9 ? 8 : 16;
+      const neededBits = 4 + lenBits + byteLen * 8;
+      if (neededBits <= dataCapacityBytes * 8) return v;
+    }
+    throw new Error('QR URL too long');
+  }
+
+  function encodeDataCodewords(bytes, version) {
+    const info = VERSION_TABLE_M[version];
+    const totalDataCw = info[2] * info[3] + info[4] * info[5];
+    const bits = [];
+    const pushBits = (val, len) => {
+      for (let i = len - 1; i >= 0; i--) bits.push((val >>> i) & 1);
+    };
+
+    // Byte mode indicator: 0100
+    pushBits(0b0100, 4);
+    pushBits(bytes.length, version <= 9 ? 8 : 16);
+    for (const b of bytes) pushBits(b, 8);
+
+    const maxBits = totalDataCw * 8;
+    const term = Math.min(4, maxBits - bits.length);
+    pushBits(0, term);
+    while (bits.length % 8 !== 0) bits.push(0);
+
+    const codewords = [];
+    for (let i = 0; i < bits.length; i += 8) {
+      let byte = 0;
+      for (let j = 0; j < 8; j++) byte = (byte << 1) | bits[i + j];
+      codewords.push(byte);
+    }
+
+    const padBytes = [0xec, 0x11];
+    let padIdx = 0;
+    while (codewords.length < totalDataCw) {
+      codewords.push(padBytes[padIdx % 2]);
+      padIdx++;
+    }
+    return codewords;
+  }
+
+  function interleaveCodewords(dataCw, version) {
+    const [, ecLen, g1Blocks, g1Len, g2Blocks, g2Len] = VERSION_TABLE_M[version];
+    const dataBlocks = [];
+    const ecBlocks = [];
+    let offset = 0;
+
+    for (let i = 0; i < g1Blocks; i++) {
+      const blk = dataCw.slice(offset, offset + g1Len);
+      offset += g1Len;
+      dataBlocks.push(blk);
+      ecBlocks.push(rsComputeRemainder(blk, ecLen));
+    }
+    for (let i = 0; i < g2Blocks; i++) {
+      const blk = dataCw.slice(offset, offset + g2Len);
+      offset += g2Len;
+      dataBlocks.push(blk);
+      ecBlocks.push(rsComputeRemainder(blk, ecLen));
+    }
+
+    const result = [];
+    const maxDataLen = Math.max(g1Len, g2Len);
+    for (let col = 0; col < maxDataLen; col++) {
+      for (const blk of dataBlocks) {
+        if (col < blk.length) result.push(blk[col]);
+      }
+    }
+    for (let col = 0; col < ecLen; col++) {
+      for (const blk of ecBlocks) {
+        result.push(blk[col]);
+      }
+    }
+    return result;
+  }
+
+  function createEmptyGrid(size) {
+    return {
+      size,
+      modules: Array.from({ length: size }, () => new Uint8Array(size)),
+      isFunc: Array.from({ length: size }, () => new Uint8Array(size))
+    };
+  }
+
+  function setFuncModule(grid, r, c, dark) {
+    if (r < 0 || r >= grid.size || c < 0 || c >= grid.size) return;
+    grid.modules[r][c] = dark ? 1 : 0;
+    grid.isFunc[r][c] = 1;
+  }
+
+  function drawFunctionPatterns(grid, version) {
+    const size = grid.size;
+
+    // Timing patterns
+    for (let i = 0; i < size; i++) {
+      setFuncModule(grid, 6, i, i % 2 === 0);
+      setFuncModule(grid, i, 6, i % 2 === 0);
+    }
+
+    // Finder patterns + separators (top-left, top-right, bottom-left)
+    const drawFinder = (cy, cx) => {
+      for (let dy = -4; dy <= 4; dy++) {
+        for (let dx = -4; dx <= 4; dx++) {
+          const dist = Math.max(Math.abs(dx), Math.abs(dy));
+          setFuncModule(grid, cy + dy, cx + dx, dist !== 2 && dist !== 4);
+        }
+      }
+    };
+    drawFinder(3, 3);
+    drawFinder(3, size - 4);
+    drawFinder(size - 4, 3);
+
+    // Alignment patterns
+    const pos = ALIGNMENT_POS[version];
+    for (let i = 0; i < pos.length; i++) {
+      for (let j = 0; j < pos.length; j++) {
+        if (
+          (i === 0 && j === 0) ||
+          (i === 0 && j === pos.length - 1) ||
+          (i === pos.length - 1 && j === 0)
+        ) {
+          continue;
+        }
+        const cy = pos[i];
+        const cx = pos[j];
+        for (let dy = -2; dy <= 2; dy++) {
+          for (let dx = -2; dx <= 2; dx++) {
+            setFuncModule(grid, cy + dy, cx + dx, Math.max(Math.abs(dx), Math.abs(dy)) !== 1);
+          }
+        }
+      }
+    }
+
+    // Reserve format info bits & dark module
+    for (let i = 0; i <= 8; i++) {
+      if (i !== 6) {
+        setFuncModule(grid, 8, i, false);
+        setFuncModule(grid, i, 8, false);
+      }
+    }
+    for (let i = 0; i < 8; i++) {
+      setFuncModule(grid, 8, size - 1 - i, false);
+      setFuncModule(grid, size - 1 - i, 8, false);
+    }
+    setFuncModule(grid, size - 8, 8, true); // Always dark module
+
+    // Version >= 7 version info blocks (we support up to V10)
+    if (version >= 7) {
+      let rem = version;
+      for (let i = 0; i < 12; i++) rem = (rem << 1) ^ ((rem >>> 11) * 0x1f25);
+      const vBits = (version << 12) | rem;
+      for (let i = 0; i < 18; i++) {
+        const bit = ((vBits >>> i) & 1) === 1;
+        const a = size - 11 + (i % 3);
+        const b = Math.floor(i / 3);
+        setFuncModule(grid, a, b, bit);
+        setFuncModule(grid, b, a, bit);
+      }
+    }
+  }
+
+  function drawCodewords(grid, allCodewords) {
+    const size = grid.size;
+    let bitIdx = 0;
+    const totalBits = allCodewords.length * 8;
+
+    for (let right = size - 1; right >= 1; right -= 2) {
+      if (right === 6) right = 5;
+      for (let vert = 0; vert < size; vert++) {
+        for (let j = 0; j < 2; j++) {
+          const c = right - j;
+          const upward = ((right + 1) & 2) === 0;
+          const r = upward ? size - 1 - vert : vert;
+          if (!grid.isFunc[r][c]) {
+            let dark = false;
+            if (bitIdx < totalBits) {
+              dark = ((allCodewords[bitIdx >>> 3] >>> (7 - (bitIdx & 7))) & 1) === 1;
+              bitIdx++;
+            }
+            grid.modules[r][c] = dark ? 1 : 0;
+          }
+        }
+      }
+    }
+  }
+
+  function applyMaskAndFormat(baseGrid, mask) {
+    const size = baseGrid.size;
+    const modules = baseGrid.modules.map((row) => new Uint8Array(row));
+    const isFunc = baseGrid.isFunc;
+
+    for (let r = 0; r < size; r++) {
+      for (let c = 0; c < size; c++) {
+        if (isFunc[r][c]) continue;
+        let invert = false;
+        switch (mask) {
+          case 0: invert = (r + c) % 2 === 0; break;
+          case 1: invert = r % 2 === 0; break;
+          case 2: invert = c % 3 === 0; break;
+          case 3: invert = (r + c) % 3 === 0; break;
+          case 4: invert = (Math.floor(r / 2) + Math.floor(c / 3)) % 2 === 0; break;
+          case 5: invert = ((r * c) % 2) + ((r * c) % 3) === 0; break;
+          case 6: invert = (((r * c) % 2) + ((r * c) % 3)) % 2 === 0; break;
+          case 7: invert = (((r + c) % 2) + ((r * c) % 3)) % 2 === 0; break;
+        }
+        if (invert) modules[r][c] ^= 1;
+      }
+    }
+
+    // ECC Level M format indicator bits = 00
+    const data = (0b00 << 3) | mask;
+    let rem = data;
+    for (let i = 0; i < 10; i++) rem = (rem << 1) ^ ((rem >>> 9) * 0x537);
+    const bits = ((data << 10) | rem) ^ 0x5412;
+    const getBit = (idx) => ((bits >>> idx) & 1);
+
+    // First copy around top-left
+    for (let i = 0; i <= 5; i++) modules[8][i] = getBit(i);
+    modules[8][7] = getBit(6);
+    modules[8][8] = getBit(7);
+    modules[7][8] = getBit(8);
+    for (let i = 9; i < 15; i++) modules[14 - i][8] = getBit(i);
+
+    // Second copy along top-right & bottom-left
+    for (let i = 0; i < 8; i++) modules[8][size - 1 - i] = getBit(i);
+    for (let i = 8; i < 15; i++) modules[size - 15 + i][8] = getBit(i);
+    modules[size - 8][8] = 1;
+
+    return modules;
+  }
+
+  function computePenalty(modules) {
+    const size = modules.length;
+    let score = 0;
+
+    // Adjacent runs in rows & cols
+    for (let r = 0; r < size; r++) {
+      let runColor = modules[r][0], runLen = 1;
+      for (let c = 1; c < size; c++) {
+        if (modules[r][c] === runColor) {
+          runLen++;
+          if (runLen === 5) score += 3;
+          else if (runLen > 5) score += 1;
+        } else {
+          runColor = modules[r][c];
+          runLen = 1;
+        }
+      }
+    }
+    for (let c = 0; c < size; c++) {
+      let runColor = modules[0][c], runLen = 1;
+      for (let r = 1; r < size; r++) {
+        if (modules[r][c] === runColor) {
+          runLen++;
+          if (runLen === 5) score += 3;
+          else if (runLen > 5) score += 1;
+        } else {
+          runColor = modules[r][c];
+          runLen = 1;
+        }
+      }
+    }
+
+    // 2x2 blocks
+    for (let r = 0; r < size - 1; r++) {
+      for (let c = 0; c < size - 1; c++) {
+        const v = modules[r][c];
+        if (v === modules[r][c + 1] && v === modules[r + 1][c] && v === modules[r + 1][c + 1]) {
+          score += 3;
+        }
+      }
+    }
+    return score;
+  }
+
+  /**
+   * 生成二维码布尔矩阵 (matrix[r][c] === 1 表示深色模块)
+   */
+  function generateQRMatrix(text) {
+    let bytes = utf8Bytes(String(text || 'https://example.com'));
+    if (bytes.length > 210) {
+      bytes = bytes.slice(0, 210);
+    }
+    const version = chooseVersion(bytes.length);
+    const size = version * 4 + 17;
+    const dataCw = encodeDataCodewords(bytes, version);
+    const allCw = interleaveCodewords(dataCw, version);
+
+    const grid = createEmptyGrid(size);
+    drawFunctionPatterns(grid, version);
+    drawCodewords(grid, allCw);
+
+    let bestModules = null;
+    let bestPenalty = Infinity;
+    for (let mask = 0; mask < 8; mask++) {
+      const candidate = applyMaskAndFormat(grid, mask);
+      const pen = computePenalty(candidate);
+      if (pen < bestPenalty) {
+        bestPenalty = pen;
+        bestModules = candidate;
+      }
+    }
+    return bestModules;
+  }
+
+  /**
+   * 渲染为内联 SVG 字符串（带静区 Quiet Zone）
+   */
+  function renderQRToSVG(text, darkColor, bgColor) {
+    const matrix = generateQRMatrix(text);
+    const n = matrix.length;
+    const quiet = 3;
+    const total = n + quiet * 2;
+    const dark = darkColor || '#1A1815';
+    const bg = bgColor || '#FFFFFF';
+
+    let paths = '';
+    for (let r = 0; r < n; r++) {
+      for (let c = 0; c < n; c++) {
+        if (matrix[r][c]) {
+          paths += `M${c + quiet},${r + quiet}h1v1h-1z`;
+        }
+      }
+    }
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${total} ${total}" shape-rendering="crispEdges" aria-label="扫码参与测试二维码"><rect width="${total}" height="${total}" fill="${bg}"/><path d="${paths}" fill="${dark}"/></svg>`;
+  }
+
+  /**
+   * 直接将二维码绘制到 Canvas 指定区域
+   */
+  function drawQROnCanvas(ctx, text, x, y, boxSize, darkColor, bgColor) {
+    const matrix = generateQRMatrix(text);
+    const n = matrix.length;
+    const quiet = 3;
+    const total = n + quiet * 2;
+    const cell = boxSize / total;
+
+    ctx.fillStyle = bgColor || '#FFFFFF';
+    ctx.fillRect(x, y, boxSize, boxSize);
+
+    ctx.fillStyle = darkColor || '#1A1815';
+    for (let r = 0; r < n; r++) {
+      for (let c = 0; c < n; c++) {
+        if (matrix[r][c]) {
+          const rx = Math.round(x + (c + quiet) * cell);
+          const ry = Math.round(y + (r + quiet) * cell);
+          const rw = Math.round(x + (c + quiet + 1) * cell) - rx;
+          const rh = Math.round(y + (r + quiet + 1) * cell) - ry;
+          ctx.fillRect(rx, ry, rw, rh);
+        }
+      }
+    }
+  }
+
+  global.MiniQR = {
+    generateQRMatrix,
+    renderQRToSVG,
+    drawQROnCanvas
+  };
+})(typeof window !== 'undefined' ? window : globalThis);
+
+/**
+ * 《测测你最容易吸引什么样的恋人》核心交互、六维魅力匹配引擎与法式海报生成器
+ */
+
+(function () {
+  'use strict';
+
+  const STORAGE_KEY = 'lover_attraction_quiz_progress_15q_v1';
+  const SHARE_URL_KEY = 'lover_attraction_share_url_v1';
+  const TOTAL_QUESTIONS = QUESTIONS.length;
+  const DIM_KEYS = DIMENSIONS.map((d) => d.key);
+
+  const state = {
+    currentIndex: 0,
+    answers: new Array(TOTAL_QUESTIONS).fill(null),
+    isTransitioning: false,
+    lastResult: null,
+    customShareUrl: ''
+  };
+
+  // =========================================================================
+  // 1. 六维白化向量匹配引擎（自动计算均值、协方差与白化矩阵）
+  // =========================================================================
+  const engine = initScoringEngine();
+
+  function initScoringEngine() {
+    const n = DIM_KEYS.length;
+    const mean = new Array(n).fill(0);
+    const cov = Array.from({ length: n }, () => new Array(n).fill(0));
+    const minRaw = new Array(n).fill(0);
+    const maxRaw = new Array(n).fill(0);
+
+    for (const q of QUESTIONS) {
+      const qMean = new Array(n).fill(0);
+      const k = q.options.length;
+
+      for (let i = 0; i < n; i++) {
+        const key = DIM_KEYS[i];
+        const vals = q.options.map((opt) => opt.scores[key] || 0);
+        minRaw[i] += Math.min(...vals);
+        maxRaw[i] += Math.max(...vals);
+        qMean[i] = vals.reduce((a, b) => a + b, 0) / k;
+        mean[i] += qMean[i];
+      }
+
+      for (const opt of q.options) {
+        const diff = DIM_KEYS.map((key, i) => (opt.scores[key] || 0) - qMean[i]);
+        for (let i = 0; i < n; i++) {
+          for (let j = 0; j < n; j++) {
+            cov[i][j] += (diff[i] * diff[j]) / k;
+          }
+        }
+      }
+    }
+
+    const std = cov.map((row, i) => Math.sqrt(Math.max(row[i], 1e-6)));
+    const { vals, vecs } = jacobiSymmetricEigen(cov);
+    const W = Array.from({ length: n }, () => new Array(n).fill(0));
+
+    for (let i = 0; i < n; i++) {
+      for (let j = 0; j < n; j++) {
+        for (let m = 0; m < n; m++) {
+          const invSqrt = 1 / Math.sqrt(Math.max(vals[m], 1e-6));
+          W[i][j] += vecs[i][m] * invSqrt * vecs[j][m];
+        }
+      }
+    }
+
+    const charProfiles = CHARACTERS.map((char) => {
+      const zTarget = DIM_KEYS.map((key) => (char.target[key] - 50) / 25);
+      const xCentered = zTarget.map((z, i) => z * std[i]);
+      const wVec = matVecMul(W, xCentered);
+      const wNorm = Math.hypot(...wVec) || 1;
+      return {
+        character: char,
+        wUnit: wVec.map((v) => v / wNorm),
+        bias: char.bias || 0
+      };
+    });
+
+    return { mean, std, minRaw, maxRaw, W, charProfiles };
+  }
+
+  function jacobiSymmetricEigen(matrix) {
+    const n = matrix.length;
+    const M = matrix.map((row) => row.slice());
+    const V = Array.from({ length: n }, (_, i) =>
+      Array.from({ length: n }, (_, j) => (i === j ? 1 : 0))
+    );
+
+    for (let iter = 0; iter < 100; iter++) {
+      let p = 0;
+      let q = 1;
+      let maxOff = 0;
+      for (let i = 0; i < n; i++) {
+        for (let j = i + 1; j < n; j++) {
+          if (Math.abs(M[i][j]) > maxOff) {
+            maxOff = Math.abs(M[i][j]);
+            p = i;
+            q = j;
+          }
+        }
+      }
+      if (maxOff < 1e-11) break;
+
+      const theta = 0.5 * Math.atan2(2 * M[p][q], M[q][q] - M[p][p]);
+      const c = Math.cos(theta);
+      const s = Math.sin(theta);
+
+      for (let i = 0; i < n; i++) {
+        const mip = M[i][p];
+        const miq = M[i][q];
+        M[i][p] = c * mip - s * miq;
+        M[i][q] = s * mip + c * miq;
+      }
+      for (let i = 0; i < n; i++) {
+        const mpi = M[p][i];
+        const mqi = M[q][i];
+        M[p][i] = c * mpi - s * mqi;
+        M[q][i] = s * mpi + c * mqi;
+      }
+      M[p][q] = 0;
+      M[q][p] = 0;
+
+      for (let i = 0; i < n; i++) {
+        const vip = V[i][p];
+        const viq = V[i][q];
+        V[i][p] = c * vip - s * viq;
+        V[i][q] = s * vip + c * viq;
+      }
+    }
+
+    return {
+      vals: M.map((row, i) => row[i]),
+      vecs: V
+    };
+  }
+
+  function matVecMul(M, v) {
+    return M.map((row) => row.reduce((sum, x, idx) => sum + x * v[idx], 0));
+  }
+
+  function evaluateQuizResult(answers) {
+    const raw = new Array(DIM_KEYS.length).fill(0);
+
+    answers.forEach((optIdx, qIdx) => {
+      const validIdx = optIdx !== null && optIdx >= 0 ? optIdx : 0;
+      const opt = QUESTIONS[qIdx].options[validIdx];
+      DIM_KEYS.forEach((key, dIdx) => {
+        raw[dIdx] += opt.scores[key] || 0;
+      });
+    });
+
+    const centered = raw.map((val, i) => val - engine.mean[i]);
+    const zScores = centered.map((val, i) => val / engine.std[i]);
+
+    const displayScores = {};
+    const dimDetails = DIMENSIONS.map((dim, i) => {
+      const linearRatio =
+        (raw[i] - engine.minRaw[i]) / Math.max(1, engine.maxRaw[i] - engine.minRaw[i]);
+      const sigmoidRatio = 1 / (1 + Math.exp(-0.85 * zScores[i]));
+      const blended = 0.45 * linearRatio + 0.55 * sigmoidRatio;
+      const score = Math.round(Math.min(98, Math.max(16, blended * 100)));
+      displayScores[dim.key] = score;
+      return {
+        ...dim,
+        score,
+        z: zScores[i]
+      };
+    });
+
+    const wUser = matVecMul(engine.W, centered);
+    const wNorm = Math.hypot(...wUser);
+    const wUnit = wNorm > 1e-6 ? wUser.map((v) => v / wNorm) : [1, 0, 0, 0, 0, 0];
+
+    const ranked = engine.charProfiles
+      .map((profile) => {
+        let cosine = 0;
+        for (let i = 0; i < wUnit.length; i++) {
+          cosine += wUnit[i] * profile.wUnit[i];
+        }
+        const adjustedScore = cosine + profile.bias;
+        const clampedCos = Math.max(-0.5, Math.min(1, adjustedScore));
+        const matchPct = Math.round(84 + ((clampedCos + 0.5) / 1.5) * 15);
+        return {
+          character: profile.character,
+          rawSim: adjustedScore,
+          cosine,
+          matchPct: Math.min(99, Math.max(83, matchPct))
+        };
+      })
+      .sort((a, b) => b.rawSim - a.rawSim);
+
+    const best = ranked[0];
+    const runnerUp = ranked[1];
+
+    const sortedByStrength = [...dimDetails].sort((a, b) => b.score - a.score);
+    const topDim1 = sortedByStrength[0];
+    const topDim2 = sortedByStrength[1];
+    const dynamicNote = `你的魅力雷达中，「${topDim1.fullName}」（${topDim1.score}分）与「${topDim2.fullName}」（${topDim2.score}分）信号最强。`;
+
+    return {
+      best,
+      runnerUp,
+      displayScores,
+      dimDetails,
+      dynamicReason: `${dynamicNote}${best.character.reason}`
+    };
+  }
+
+  // =========================================================================
+  // 2. DOM 节点缓存与初始化
+  // =========================================================================
+  const els = {};
+
+  function cacheElements() {
+    els.viewHome = document.getElementById('view-home');
+    els.viewQuiz = document.getElementById('view-quiz');
+    els.viewComputing = document.getElementById('view-computing');
+    els.viewResult = document.getElementById('view-result');
+
+    els.rosterChips = document.getElementById('roster-chips');
+    els.btnStart = document.getElementById('btn-start');
+    els.resumeBanner = document.getElementById('resume-banner');
+    els.resumeCount = document.getElementById('resume-count');
+    els.btnResume = document.getElementById('btn-resume');
+
+    els.chapterBadge = document.getElementById('chapter-badge');
+    els.currentNum = document.getElementById('current-q-num');
+    els.totalNum = document.getElementById('total-q-num');
+    els.progressFill = document.getElementById('progress-fill');
+    els.questionStage = document.getElementById('question-stage');
+    els.questionTitle = document.getElementById('question-title');
+    els.optionsList = document.getElementById('options-list');
+    els.btnPrev = document.getElementById('btn-prev');
+    els.btnNext = document.getElementById('btn-next');
+
+    els.resMatchPct = document.getElementById('res-match-pct');
+    els.resName = document.getElementById('res-name');
+    els.resCourtesy = document.getElementById('res-courtesy');
+    els.resVerdict = document.getElementById('res-verdict');
+    els.resSeal = document.getElementById('res-seal');
+    els.resTags = document.getElementById('res-tags');
+    els.resQuote = document.getElementById('res-quote');
+    els.resRadarWrap = document.getElementById('res-radar-wrap');
+    els.resDimBars = document.getElementById('res-dim-bars');
+    els.resRunnerUp = document.getElementById('res-runner-up');
+    els.resTraits = document.getElementById('res-traits');
+    els.resReason = document.getElementById('res-reason');
+    els.resAdvantage = document.getElementById('res-advantage');
+    els.resScene = document.getElementById('res-scene');
+    els.resSweetSpot = document.getElementById('res-sweetspot');
+    els.resWarning = document.getElementById('res-warning');
+    els.resQrBox = document.getElementById('res-qr-box');
+
+    els.btnSavePoster = document.getElementById('btn-save-poster');
+    els.btnCopyText = document.getElementById('btn-copy-text');
+    els.btnCleanShot = document.getElementById('btn-clean-shot');
+    els.btnRestart = document.getElementById('btn-restart');
+    els.qrUrlInput = document.getElementById('qr-url-input');
+    els.btnUpdateQr = document.getElementById('btn-update-qr');
+    els.cleanShotToast = document.getElementById('clean-shot-toast');
+    els.toastMsg = document.getElementById('toast-msg');
+
+    els.posterModal = document.getElementById('poster-modal');
+    els.posterModalImg = document.getElementById('poster-modal-img');
+    els.posterModalClose = document.getElementById('poster-modal-close');
+  }
+
+  function initApp() {
+    cacheElements();
+    loadSavedShareUrl();
+    renderRosterPreview();
+    checkSavedProgress();
+    bindEvents();
+  }
+
+  function loadSavedShareUrl() {
+    try {
+      const saved = localStorage.getItem(SHARE_URL_KEY);
+      if (saved && saved.trim()) {
+        state.customShareUrl = saved.trim();
+      }
+    } catch (_) {
+      // ignore
+    }
+  }
+
+  function getActiveShareUrl() {
+    if (state.customShareUrl) return state.customShareUrl;
+    if (typeof window !== 'undefined' && window.location && window.location.href) {
+      const host = window.location.hostname || '';
+      const isLocal =
+        host === 'localhost' ||
+        host === '127.0.0.1' ||
+        host === '0.0.0.0' ||
+        window.location.protocol === 'file:';
+      if (!isLocal && (window.location.protocol === 'http:' || window.location.protocol === 'https:')) {
+        return window.location.href.split('#')[0];
+      }
+    }
+    if (typeof QUIZ_CONFIG !== 'undefined' && QUIZ_CONFIG.defaultShareUrl) {
+      return QUIZ_CONFIG.defaultShareUrl;
+    }
+    if (typeof window !== 'undefined' && window.location && window.location.href.startsWith('http')) {
+      return window.location.href.split('#')[0];
+    }
+    return 'https://lover-attraction-quiz.example.com/';
+  }
+
+  function refreshQRCodeUI() {
+    const url = getActiveShareUrl();
+    if (els.qrUrlInput) {
+      els.qrUrlInput.value = url;
+    }
+    const qrApi = typeof MiniQR !== 'undefined' ? MiniQR : (typeof window !== 'undefined' && window.MiniQR);
+    if (els.resQrBox && qrApi) {
+      els.resQrBox.innerHTML = qrApi.renderQRToSVG(url, '#2A1F23', '#FFFFFF');
+    }
+  }
+
+  function renderRosterPreview() {
+    els.rosterChips.innerHTML = CHARACTERS.map(
+      (c) => `<span class="roster-chip">✦ ${c.seal} · ${c.name.replace(/恋人|伴侣/, '')}</span>`
+    ).join('');
+    els.totalNum.textContent = String(TOTAL_QUESTIONS);
+  }
+
+  // =========================================================================
+  // 3. 本地进度存储与恢复
+  // =========================================================================
+  function saveProgress() {
+    try {
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({
+          currentIndex: state.currentIndex,
+          answers: state.answers
+        })
+      );
+    } catch (_) {
+      // ignore
+    }
+  }
+
+  function clearProgress() {
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch (_) {
+      // ignore
+    }
+  }
+
+  function checkSavedProgress() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      const parsed = JSON.parse(raw);
+      if (parsed && Array.isArray(parsed.answers) && parsed.answers.length === TOTAL_QUESTIONS) {
+        const answeredCount = parsed.answers.filter((a) => a !== null).length;
+        if (answeredCount > 0 && answeredCount < TOTAL_QUESTIONS) {
+          els.resumeCount.textContent = String(answeredCount);
+          els.resumeBanner.classList.add('visible');
+        }
+      }
+    } catch (_) {
+      // ignore
+    }
+  }
+
+  // =========================================================================
+  // 4. 答题流转控制
+  // =========================================================================
+  function switchView(targetEl) {
+    [els.viewHome, els.viewQuiz, els.viewComputing, els.viewResult].forEach((el) => {
+      el.classList.toggle('active', el === targetEl);
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function startNewQuiz() {
+    state.currentIndex = 0;
+    state.answers = new Array(TOTAL_QUESTIONS).fill(null);
+    state.isTransitioning = false;
+    clearProgress();
+    els.resumeBanner.classList.remove('visible');
+    renderCurrentQuestion('next');
+    switchView(els.viewQuiz);
+  }
+
+  function resumeSavedQuiz() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return startNewQuiz();
+      const parsed = JSON.parse(raw);
+      state.answers = parsed.answers;
+      const firstUnanswered = state.answers.findIndex((a) => a === null);
+      state.currentIndex =
+        firstUnanswered !== -1
+          ? firstUnanswered
+          : Math.min(parsed.currentIndex || 0, TOTAL_QUESTIONS - 1);
+      state.isTransitioning = false;
+      renderCurrentQuestion('next');
+      switchView(els.viewQuiz);
+    } catch (_) {
+      startNewQuiz();
+    }
+  }
+
+  function renderCurrentQuestion(direction) {
+    const q = QUESTIONS[state.currentIndex];
+    const selectedIdx = state.answers[state.currentIndex];
+
+    els.chapterBadge.textContent = q.chapter;
+    els.currentNum.textContent = String(state.currentIndex + 1).padStart(2, '0');
+    const pct = ((state.currentIndex + 1) / TOTAL_QUESTIONS) * 100;
+    els.progressFill.style.width = `${pct.toFixed(1)}%`;
+
+    els.questionStage.classList.remove('anim-next', 'anim-prev');
+    void els.questionStage.offsetWidth;
+    els.questionStage.classList.add(direction === 'prev' ? 'anim-prev' : 'anim-next');
+
+    els.questionTitle.textContent = `${q.id}. ${q.question}`;
+
+    els.optionsList.innerHTML = q.options
+      .map((opt, idx) => {
+        const isSelected = selectedIdx === idx ? 'selected' : '';
+        return `
+          <button type="button" class="option-btn ${isSelected}" data-idx="${idx}" aria-pressed="${selectedIdx === idx}">
+            <span class="option-key">${opt.label}</span>
+            <span class="option-text">${opt.text}</span>
+          </button>
+        `;
+      })
+      .join('');
+
+    els.btnPrev.disabled = state.currentIndex === 0;
+    els.btnNext.disabled = selectedIdx === null;
+    els.btnNext.textContent =
+      state.currentIndex === TOTAL_QUESTIONS - 1 ? '揭晓心动档案 →' : '下一题 →';
+  }
+
+  function handleSelectOption(optIndex) {
+    if (state.isTransitioning) return;
+    state.isTransitioning = true;
+    state.answers[state.currentIndex] = optIndex;
+    saveProgress();
+
+    const buttons = els.optionsList.querySelectorAll('.option-btn');
+    buttons.forEach((btn, idx) => {
+      const active = idx === optIndex;
+      btn.classList.toggle('selected', active);
+      btn.setAttribute('aria-pressed', String(active));
+    });
+    els.btnNext.disabled = false;
+
+    setTimeout(() => {
+      if (state.currentIndex < TOTAL_QUESTIONS - 1) {
+        state.currentIndex += 1;
+        saveProgress();
+        renderCurrentQuestion('next');
+        state.isTransitioning = false;
+      } else {
+        finishQuiz();
+      }
+    }, 240);
+  }
+
+  function goPrevQuestion() {
+    if (state.isTransitioning || state.currentIndex <= 0) return;
+    state.currentIndex -= 1;
+    saveProgress();
+    renderCurrentQuestion('prev');
+  }
+
+  function goNextQuestion() {
+    if (state.isTransitioning) return;
+    if (state.answers[state.currentIndex] === null) return;
+    if (state.currentIndex < TOTAL_QUESTIONS - 1) {
+      state.currentIndex += 1;
+      saveProgress();
+      renderCurrentQuestion('next');
+    } else {
+      finishQuiz();
+    }
+  }
+
+  function finishQuiz() {
+    clearProgress();
+    switchView(els.viewComputing);
+    const result = evaluateQuizResult(state.answers);
+    state.lastResult = result;
+
+    setTimeout(() => {
+      renderResultView(result);
+      switchView(els.viewResult);
+      state.isTransitioning = false;
+    }, 950);
+  }
+
+  // =========================================================================
+  // 5. 结果页面渲染与六维魅力雷达图
+  // =========================================================================
+  function renderResultView(result) {
+    const char = result.best.character;
+    const accent = char.accentColor || '#A84C60';
+
+    els.resMatchPct.textContent = `磁场契合度 ${result.best.matchPct}%`;
+    els.resName.textContent = char.name;
+    els.resCourtesy.textContent = char.courtesy;
+    els.resVerdict.textContent = char.title;
+    els.resVerdict.style.color = accent;
+    els.resSeal.textContent = char.seal;
+    els.resSeal.style.background = `linear-gradient(135deg, ${accent} 0%, #6D597A 100%)`;
+
+    els.resTags.innerHTML = char.tags
+      .map((t) => `<span class="char-tag">✦ ${t}</span>`)
+      .join('');
+
+    els.resQuote.textContent = char.quote;
+    els.resRadarWrap.innerHTML = buildRadarSVG(result.dimDetails, accent);
+
+    els.resDimBars.innerHTML = result.dimDetails
+      .map(
+        (d) => `
+        <div class="dim-bar-item">
+          <span class="dim-bar-name">${d.name}</span>
+          <div class="dim-bar-track">
+            <div class="dim-bar-fill" style="width:${d.score}%; background:linear-gradient(90deg, ${accent}, #7B567B)"></div>
+          </div>
+          <span class="dim-bar-val">${d.score}</span>
+        </div>
+      `
+      )
+      .join('');
+
+    els.resRunnerUp.innerHTML = `
+      <span>隐藏备选桃花类型</span>
+      <strong>${result.runnerUp.character.name} · ${result.runnerUp.matchPct}%</strong>
+    `;
+
+    els.resTraits.textContent = char.traits;
+    els.resReason.textContent = result.dynamicReason;
+    els.resAdvantage.textContent = char.advantage;
+
+    els.resScene.textContent = char.easterEgg.scene;
+    els.resSweetSpot.textContent = char.easterEgg.sweetSpot;
+    els.resWarning.textContent = char.easterEgg.warning;
+
+    refreshQRCodeUI();
+  }
+
+  function buildRadarSVG(dimDetails, accentColor) {
+    const size = 220;
+    const cx = size / 2;
+    const cy = size / 2;
+    const radius = 74;
+    const levels = [0.33, 0.66, 1.0];
+
+    const pointAt = (idx, rRatio) => {
+      const angle = -Math.PI / 2 + (idx * 2 * Math.PI) / 6;
+      return [
+        cx + radius * rRatio * Math.cos(angle),
+        cy + radius * rRatio * Math.sin(angle)
+      ];
+    };
+
+    const gridPolys = levels
+      .map((lv) => {
+        const pts = dimDetails
+          .map((_, i) => pointAt(i, lv).map((n) => n.toFixed(1)).join(','))
+          .join(' ');
+        return `<polygon points="${pts}" fill="none" stroke="#E8DCE0" stroke-width="1" />`;
+      })
+      .join('');
+
+    const axesLines = dimDetails
+      .map((_, i) => {
+        const [x, y] = pointAt(i, 1);
+        return `<line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="#EFE5E8" stroke-width="1" />`;
+      })
+      .join('');
+
+    const dataPoints = dimDetails.map((d, i) => pointAt(i, d.score / 100));
+    const dataPolyStr = dataPoints
+      .map((p) => p.map((n) => n.toFixed(1)).join(','))
+      .join(' ');
+
+    const dots = dataPoints
+      .map(
+        ([x, y]) =>
+          `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3.4" fill="${accentColor}" stroke="#FFFFFF" stroke-width="1.4" />`
+      )
+      .join('');
+
+    const labels = dimDetails
+      .map((d, i) => {
+        const [lx, ly] = pointAt(i, 1.25);
+        return `<text x="${lx.toFixed(1)}" y="${(ly + 4).toFixed(1)}" text-anchor="middle" font-size="12" font-weight="600" fill="#5B4A51">${d.name}</text>`;
+      })
+      .join('');
+
+    return `
+      <svg viewBox="0 0 ${size} ${size}" role="img" aria-label="六维魅力磁场雷达图">
+        ${gridPolys}
+        ${axesLines}
+        <polygon points="${dataPolyStr}" fill="${accentColor}" fill-opacity="0.18" stroke="${accentColor}" stroke-width="2" />
+        ${dots}
+        ${labels}
+      </svg>
+    `;
+  }
+
+  // =========================================================================
+  // 6. 原生 Canvas 法式电影感高清分享海报生成（含扫码二维码）
+  // =========================================================================
+  function drawRoundedRect(ctx, x, y, w, h, r) {
+    const rad = Math.min(r, w / 2, h / 2);
+    ctx.beginPath();
+    ctx.moveTo(x + rad, y);
+    ctx.lineTo(x + w - rad, y);
+    ctx.quadraticCurveTo(x + w, y, x + w, y + rad);
+    ctx.lineTo(x + w, y + h - rad);
+    ctx.quadraticCurveTo(x + w, y + h, x + w - rad, y + h);
+    ctx.lineTo(x + rad, y + h);
+    ctx.quadraticCurveTo(x, y + h, x, y + h - rad);
+    ctx.lineTo(x, y + rad);
+    ctx.quadraticCurveTo(x, y, x + rad, y);
+    ctx.closePath();
+  }
+
+  function generateSharePoster(result) {
+    const char = result.best.character;
+    const shareUrl = getActiveShareUrl();
+    const W = 900;
+    const serif = '"Songti SC", "STSong", "Noto Serif SC", Georgia, serif';
+    const sans = '-apple-system, "PingFang SC", "Microsoft YaHei", sans-serif';
+    const accent = char.accentColor || '#A84C60';
+
+    const canvas = document.createElement('canvas');
+    canvas.width = W;
+    canvas.height = 1650;
+    const ctx = canvas.getContext('2d');
+
+    const contentW = W - 144;
+    const quoteLines = wrapCanvasText(ctx, char.quote, W - 196, `bold 25px ${serif}`);
+    const qBoxY = 394;
+    const qBoxH = quoteLines.length * 39 + 38;
+    const radarBoxH = 264;
+
+    const traitsLines = wrapCanvasText(ctx, char.traits, contentW, `21px ${sans}`).slice(0, 5);
+    const reasonLines = wrapCanvasText(ctx, result.dynamicReason, contentW, `21px ${sans}`).slice(0, 5);
+    const easterSummary = `宿命相遇：${char.easterEgg.scene} ｜ 避雷锦囊：${char.easterEgg.warning}`;
+    const easterLines = wrapCanvasText(ctx, easterSummary, contentW, `21px ${sans}`).slice(0, 4);
+
+    const secH = (lines) => 42 + lines.length * 33;
+    const bodyEndY =
+      qBoxY +
+      qBoxH +
+      26 +
+      radarBoxH +
+      26 +
+      secH(traitsLines) +
+      18 +
+      secH(reasonLines) +
+      18 +
+      secH(easterLines);
+
+    const footerTopY = bodyEndY + 28;
+    const footerBoxH = 152;
+    const H = footerTopY + footerBoxH + 58;
+    canvas.height = H;
+
+    // 1. 丝绒暖杏白底色 + 微醺玫瑰光晕
+    ctx.fillStyle = '#F7EFEA';
+    ctx.fillRect(0, 0, W, H);
+
+    drawRoundedRect(ctx, 26, 26, W - 52, H - 52, 34);
+    ctx.fillStyle = '#FFFDFC';
+    ctx.fill();
+
+    const g1 = ctx.createRadialGradient(W * 0.86, 120, 20, W * 0.86, 120, 440);
+    g1.addColorStop(0, hexToRgba(accent, 0.12));
+    g1.addColorStop(1, 'rgba(255, 253, 252, 0)');
+    ctx.fillStyle = g1;
+    ctx.fillRect(26, 26, W - 52, H - 52);
+
+    const g2 = ctx.createRadialGradient(120, H * 0.52, 20, 120, H * 0.52, 420);
+    g2.addColorStop(0, 'rgba(109, 89, 122, 0.09)');
+    g2.addColorStop(1, 'rgba(255, 253, 252, 0)');
+    ctx.fillStyle = g2;
+    ctx.fillRect(26, 26, W - 52, H - 52);
+
+    drawRoundedRect(ctx, 38, 38, W - 76, H - 76, 26);
+    ctx.strokeStyle = '#DFC7A7';
+    ctx.lineWidth = 1.6;
+    ctx.stroke();
+
+    // 2. 顶部法式杂志刊头
+    ctx.fillStyle = '#8D7A82';
+    ctx.font = `20px ${sans}`;
+    ctx.fillText('L’AMOUR ARCHIVE · 心动引力报告', 72, 92);
+
+    ctx.textAlign = 'right';
+    ctx.fillStyle = accent;
+    ctx.font = `bold 21px ${sans}`;
+    ctx.fillText(`磁场契合度 ${result.best.matchPct}%`, W - 72, 92);
+    ctx.textAlign = 'left';
+
+    ctx.strokeStyle = '#EFE6E8';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(72, 114);
+    ctx.lineTo(W - 72, 114);
+    ctx.stroke();
+
+    // 3. 主标题与圆形徽章
+    ctx.fillStyle = accent;
+    ctx.font = `bold 21px ${sans}`;
+    ctx.fillText('✦ 你最容易吸引的命定恋人画像', 72, 158);
+
+    ctx.fillStyle = '#2A1F23';
+    ctx.font = `bold 52px ${serif}`;
+    ctx.fillText(char.name, 72, 226);
+
+    ctx.fillStyle = '#8D7A82';
+    ctx.font = `23px ${sans}`;
+    ctx.fillText(char.courtesy, 72, 266);
+
+    ctx.fillStyle = '#6D597A';
+    ctx.font = `bold 26px ${serif}`;
+    ctx.fillText(char.title, 72, 306);
+
+    // 右上微醺渐变圆印
+    const orbCx = W - 124;
+    const orbCy = 206;
+    const orbGrad = ctx.createLinearGradient(orbCx - 48, orbCy - 48, orbCx + 48, orbCy + 48);
+    orbGrad.addColorStop(0, accent);
+    orbGrad.addColorStop(1, '#6D597A');
+    ctx.beginPath();
+    ctx.arc(orbCx, orbCy, 50, 0, Math.PI * 2);
+    ctx.fillStyle = orbGrad;
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(orbCx, orbCy, 44, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.45)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    ctx.fillStyle = '#FFFFFF';
+    ctx.font = `bold 24px ${serif}`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(char.seal, orbCx, orbCy + 1);
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'alphabetic';
+
+    // 4. 胶囊标签组
+    let tagX = 72;
+    const tagY = 330;
+    ctx.font = `20px ${sans}`;
+    char.tags.forEach((tag) => {
+      const label = `✦ ${tag}`;
+      const tw = ctx.measureText(label).width + 32;
+      drawRoundedRect(ctx, tagX, tagY, tw, 38, 19);
+      ctx.fillStyle = '#FFF7F8';
+      ctx.fill();
+      ctx.strokeStyle = hexToRgba(accent, 0.35);
+      ctx.lineWidth = 1.2;
+      ctx.stroke();
+      ctx.fillStyle = accent;
+      ctx.fillText(label, tagX + 16, tagY + 26);
+      tagX += tw + 12;
+    });
+
+    // 5. 电影感金句框
+    drawRoundedRect(ctx, 72, qBoxY, contentW, qBoxH, 18);
+    ctx.fillStyle = '#FAF1F2';
+    ctx.fill();
+    ctx.strokeStyle = '#E6CFC2';
+    ctx.lineWidth = 1.2;
+    ctx.stroke();
+
+    ctx.fillStyle = '#2A1F23';
+    ctx.font = `bold 25px ${serif}`;
+    quoteLines.forEach((line, idx) => {
+      ctx.fillText(line, 98, qBoxY + 42 + idx * 39);
+    });
+
+    // 6. 六维魅力雷达区
+    let curY = qBoxY + qBoxH + 26;
+    drawRoundedRect(ctx, 72, curY, contentW, radarBoxH, 18);
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fill();
+    ctx.strokeStyle = '#EFE6E8';
+    ctx.lineWidth = 1.2;
+    ctx.stroke();
+
+    const rCx = 215;
+    const rCy = curY + radarBoxH / 2 + 4;
+    const rMax = 86;
+    [0.35, 0.7, 1.0].forEach((lv) => {
+      ctx.beginPath();
+      result.dimDetails.forEach((_, i) => {
+        const ang = -Math.PI / 2 + (i * 2 * Math.PI) / 6;
+        const px = rCx + rMax * lv * Math.cos(ang);
+        const py = rCy + rMax * lv * Math.sin(ang);
+        if (i === 0) ctx.moveTo(px, py);
+        else ctx.lineTo(px, py);
+      });
+      ctx.closePath();
+      ctx.strokeStyle = '#E8DCE0';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    });
+
+    ctx.beginPath();
+    result.dimDetails.forEach((d, i) => {
+      const ang = -Math.PI / 2 + (i * 2 * Math.PI) / 6;
+      const px = rCx + rMax * (d.score / 100) * Math.cos(ang);
+      const py = rCy + rMax * (d.score / 100) * Math.sin(ang);
+      if (i === 0) ctx.moveTo(px, py);
+      else ctx.lineTo(px, py);
+    });
+    ctx.closePath();
+    ctx.fillStyle = hexToRgba(accent, 0.2);
+    ctx.fill();
+    ctx.strokeStyle = accent;
+    ctx.lineWidth = 2.4;
+    ctx.stroke();
+
+    ctx.fillStyle = '#5B4A51';
+    ctx.font = `bold 20px ${sans}`;
+    ctx.textAlign = 'center';
+    result.dimDetails.forEach((d, i) => {
+      const ang = -Math.PI / 2 + (i * 2 * Math.PI) / 6;
+      const lx = rCx + (rMax + 24) * Math.cos(ang);
+      const ly = rCy + (rMax + 24) * Math.sin(ang) + 7;
+      ctx.fillText(d.name, lx, ly);
+    });
+    ctx.textAlign = 'left';
+
+    const barStartX = 375;
+    const barStartY = curY + 36;
+    result.dimDetails.forEach((d, idx) => {
+      const by = barStartY + idx * 34;
+      ctx.fillStyle = '#5B4A51';
+      ctx.font = `bold 20px ${sans}`;
+      ctx.fillText(d.name, barStartX, by);
+
+      drawRoundedRect(ctx, barStartX + 58, by - 14, 300, 11, 5.5);
+      ctx.fillStyle = '#EFE6E8';
+      ctx.fill();
+
+      drawRoundedRect(ctx, barStartX + 58, by - 14, Math.max(12, Math.round(3 * d.score)), 11, 5.5);
+      ctx.fillStyle = accent;
+      ctx.fill();
+
+      ctx.fillStyle = '#8D7A82';
+      ctx.font = `20px ${serif}`;
+      ctx.fillText(String(d.score), barStartX + 372, by);
+    });
+
+    ctx.fillStyle = '#8D7A82';
+    ctx.font = `19px ${sans}`;
+    ctx.fillText(
+      `隐藏备选桃花：${result.runnerUp.character.name}（${result.runnerUp.matchPct}%）`,
+      barStartX,
+      curY + radarBoxH - 18
+    );
+
+    // 7. 吸引力深度解析模块
+    curY += radarBoxH + 26;
+    curY = drawPreparedSection(ctx, '✦ 你自身散发的致命吸引力', traitsLines, 72, curY, accent, serif, sans);
+    curY += 18;
+    curY = drawPreparedSection(ctx, '✦ 为什么这类人最容易对你上头', reasonLines, 72, curY, accent, serif, sans);
+    curY += 18;
+    curY = drawPreparedSection(ctx, '✦ 心动擦火花指南', easterLines, 72, curY, accent, serif, sans);
+
+    // 8. 底部杂志风扫码区
+    drawRoundedRect(ctx, 72, footerTopY, contentW, footerBoxH, 18);
+    ctx.fillStyle = '#FAF3F0';
+    ctx.fill();
+    ctx.strokeStyle = '#DFC7A7';
+    ctx.lineWidth = 1.2;
+    ctx.stroke();
+
+    ctx.fillStyle = '#2A1F23';
+    ctx.font = `bold 25px ${serif}`;
+    ctx.fillText('扫码测测你最容易吸引什么样的恋人', 98, footerTopY + 46);
+
+    ctx.fillStyle = '#635259';
+    ctx.font = `20px ${sans}`;
+    ctx.fillText('15道大白话恋爱细节题 · 测出你的六维心动磁场与命定桃花', 98, footerTopY + 84);
+
+    drawRoundedRect(ctx, 98, footerTopY + 102, 276, 32, 16);
+    ctx.fillStyle = hexToRgba(accent, 0.1);
+    ctx.fill();
+    ctx.fillStyle = accent;
+    ctx.font = `bold 18px ${sans}`;
+    ctx.fillText('✦ 长按识别右侧二维码立即开测', 114, footerTopY + 124);
+
+    const qrSize = 122;
+    const qrX = W - 72 - qrSize - 16;
+    const qrY = footerTopY + Math.round((footerBoxH - qrSize) / 2);
+    drawRoundedRect(ctx, qrX - 4, qrY - 4, qrSize + 8, qrSize + 8, 10);
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fill();
+    ctx.strokeStyle = '#DFC7A7';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    const qrApi = typeof MiniQR !== 'undefined' ? MiniQR : (typeof window !== 'undefined' && window.MiniQR);
+    if (qrApi) {
+      qrApi.drawQROnCanvas(ctx, shareUrl, qrX, qrY, qrSize, '#2A1F23', '#FFFFFF');
+    }
+
+    return canvas.toDataURL('image/png');
+  }
+
+  function drawPreparedSection(ctx, title, lines, x, y, accent, serif, sans) {
+    ctx.fillStyle = accent;
+    ctx.font = `bold 23px ${serif}`;
+    ctx.fillText(title, x, y + 24);
+
+    ctx.fillStyle = '#4B3C42';
+    ctx.font = `21px ${sans}`;
+    lines.forEach((line, idx) => {
+      ctx.fillText(line, x, y + 58 + idx * 33);
+    });
+    return y + 42 + lines.length * 33;
+  }
+
+  const NO_LINE_START = new Set([
+    '，', '。', '、', '；', '：', '！', '？', '）', '》', '”', '’', '】', '〉', '%', ',', '.', ':', ';', '!', '?'
+  ]);
+
+  function wrapCanvasText(ctx, text, maxWidth, fontStr) {
+    ctx.font = fontStr;
+    const chars = Array.from(text);
+    const lines = [];
+    let current = '';
+
+    for (let i = 0; i < chars.length; i++) {
+      const ch = chars[i];
+      const test = current + ch;
+      if (ctx.measureText(test).width > maxWidth && current.length > 0) {
+        if (NO_LINE_START.has(ch)) {
+          const currentArr = Array.from(current);
+          const carry = currentArr.pop() || '';
+          lines.push(currentArr.join(''));
+          current = carry + ch;
+        } else {
+          lines.push(current);
+          current = ch;
+        }
+      } else {
+        current = test;
+      }
+    }
+    if (current) lines.push(current);
+    return lines;
+  }
+
+  function hexToRgba(hex, alpha) {
+    const clean = hex.replace('#', '');
+    const r = parseInt(clean.substring(0, 2), 16) || 168;
+    const g = parseInt(clean.substring(2, 4), 16) || 76;
+    const b = parseInt(clean.substring(4, 6), 16) || 96;
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+
+  // =========================================================================
+  // 7. 导出海报、复制文案与事件绑定
+  // =========================================================================
+  function handleSavePoster() {
+    if (!state.lastResult) return;
+    const dataUrl = generateSharePoster(state.lastResult);
+    const charName = state.lastResult.best.character.name;
+
+    try {
+      const link = document.createElement('a');
+      link.download = `易吸引恋人测试_${charName.replace(/\//g, '_')}.png`;
+      link.href = dataUrl;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (_) {
+      // ignore
+    }
+
+    els.posterModalImg.src = dataUrl;
+    els.posterModal.classList.add('open');
+    showToast('已生成高清心动档案海报，可保存或长按分享');
+  }
+
+  function handleCopyShareText() {
+    if (!state.lastResult) return;
+    const char = state.lastResult.best.character;
+    const pct = state.lastResult.best.matchPct;
+    const runner = state.lastResult.runnerUp.character.name;
+
+    const shareText = [
+      `💘 我在《测测你最容易吸引什么样的恋人》测出的命定桃花是：【${char.name}】（磁场契合度 ${pct}%）`,
+      `✨ 心动标签：${char.tags.join(' · ')}`,
+      `💬 专属判词：${char.quote}`,
+      `🎬 擦出火花场景：${char.easterEgg.scene}`,
+      `🌙 隐藏备选桃花：${runner}`,
+      `🔗 测测你的心动引力：${getActiveShareUrl()}`
+    ].join('\n');
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard
+        .writeText(shareText)
+        .then(() => showToast('专属心动文案已复制，快去小红书/朋友圈分享吧'))
+        .catch(() => fallbackCopy(shareText));
+    } else {
+      fallbackCopy(shareText);
+    }
+  }
+
+  function fallbackCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand('copy');
+      showToast('专属心动文案已复制，快去分享吧');
+    } catch (_) {
+      showToast('复制失败，请直接保存海报或截图分享');
+    }
+    document.body.removeChild(ta);
+  }
+
+  let toastTimer = null;
+  function showToast(msg) {
+    els.toastMsg.textContent = msg;
+    els.toastMsg.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      els.toastMsg.classList.remove('show');
+    }, 2400);
+  }
+
+  function bindEvents() {
+    els.btnStart.addEventListener('click', startNewQuiz);
+    els.btnResume.addEventListener('click', resumeSavedQuiz);
+
+    els.optionsList.addEventListener('click', (e) => {
+      const btn = e.target.closest('.option-btn');
+      if (!btn) return;
+      const idx = Number(btn.getAttribute('data-idx'));
+      if (!Number.isNaN(idx)) {
+        handleSelectOption(idx);
+      }
+    });
+
+    els.btnPrev.addEventListener('click', goPrevQuestion);
+    els.btnNext.addEventListener('click', goNextQuestion);
+
+    els.btnSavePoster.addEventListener('click', handleSavePoster);
+    els.btnCopyText.addEventListener('click', handleCopyShareText);
+
+    if (els.btnUpdateQr && els.qrUrlInput) {
+      const applyCustomUrl = () => {
+        const val = els.qrUrlInput.value.trim();
+        state.customShareUrl = val;
+        try {
+          if (val) localStorage.setItem(SHARE_URL_KEY, val);
+          else localStorage.removeItem(SHARE_URL_KEY);
+        } catch (_) {
+          // ignore
+        }
+        refreshQRCodeUI();
+        showToast('二维码链接已更新，点击上方按钮可重新导出海报');
+      };
+      els.btnUpdateQr.addEventListener('click', applyCustomUrl);
+      els.qrUrlInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          applyCustomUrl();
+        }
+      });
+    }
+
+    els.btnCleanShot.addEventListener('click', () => {
+      document.body.classList.add('clean-shot-mode');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (
+        document.body.classList.contains('clean-shot-mode') &&
+        !e.target.closest('#btn-clean-shot')
+      ) {
+        document.body.classList.remove('clean-shot-mode');
+      }
+    });
+
+    els.btnRestart.addEventListener('click', () => {
+      document.body.classList.remove('clean-shot-mode');
+      startNewQuiz();
+    });
+
+    els.posterModalClose.addEventListener('click', () => {
+      els.posterModal.classList.remove('open');
+    });
+
+    els.posterModal.addEventListener('click', (e) => {
+      if (e.target === els.posterModal) {
+        els.posterModal.classList.remove('open');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (els.posterModal.classList.contains('open')) {
+        if (e.key === 'Escape') els.posterModal.classList.remove('open');
+        return;
+      }
+      if (!els.viewQuiz.classList.contains('active')) return;
+
+      const keyUpper = e.key.toUpperCase();
+      const keyMap = { A: 0, B: 1, C: 2, D: 3, '1': 0, '2': 1, '3': 2, '4': 3 };
+      if (Object.prototype.hasOwnProperty.call(keyMap, keyUpper)) {
+        e.preventDefault();
+        handleSelectOption(keyMap[keyUpper]);
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        goPrevQuestion();
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        goNextQuestion();
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initApp);
+  } else {
+    initApp();
+  }
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>测测你最容易吸引什么样的恋人 · 心动磁场档案</title>
+  <meta name="description" content="15道真实大白话恋爱细节与相处直觉测试，解锁你的六维魅力磁场与最容易对你上头的命定恋人类型。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23B5546A'/%3E%3Cstop offset='100%25' stop-color='%237B567B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23FFFDFC'%3E✦%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 顶部法式杂志刊头 -->
+  <header class="top-masthead" aria-label="刊头信息">
+    <span class="masthead-brand">✦ L’Amour Archive</span>
+    <span>No. 15 · Romantic Magnetism</span>
+  </header>
+
+  <main class="app-stage">
+    <!-- ==================== 1. 测试首页 ==================== -->
+    <section id="view-home" class="view-section active" aria-labelledby="main-quiz-title">
+      <div class="velvet-card">
+        <div class="velvet-card-inner">
+          <div class="hero-header">
+            <span class="editorial-kicker">✦ 趣味情感魅力磁场测试 · 1分钟快测</span>
+            <span class="hero-en-sub">Who Falls For Your Aura?</span>
+            <h1 id="main-quiz-title" class="hero-title">
+              测测你最容易吸引<br /><span class="highlight-rose">什么样的恋人</span>
+            </h1>
+          </div>
+
+          <p class="hero-quote">
+            你以为的普通日常习惯、回消息节奏和不经意的小脾气，<br />
+            其实都在悄悄向外发射专属的心动信号。<br />
+            精选 15 道像朋友聊天一样的相处情境题，看看哪种人最容易栽在你手里。
+          </p>
+
+          <div class="spec-pills">
+            <div class="spec-pill">
+              <span class="spec-pill-num">15 题</span>
+              <span class="spec-pill-label">真实生活直觉单选</span>
+            </div>
+            <div class="spec-pill">
+              <span class="spec-pill-num">6 维度</span>
+              <span class="spec-pill-label">魅力磁场雷达图</span>
+            </div>
+            <div class="spec-pill">
+              <span class="spec-pill-num">10 类</span>
+              <span class="spec-pill-label">命定桃花画像</span>
+            </div>
+          </div>
+
+          <div class="roster-preview">
+            <div class="roster-preview-title">— 你可能会吸引的十种心动对象 —</div>
+            <div id="roster-chips" class="roster-chips"></div>
+          </div>
+
+          <div class="cta-group">
+            <button id="btn-start" type="button" class="btn-primary">
+              开启心动测试 ✦
+            </button>
+            <div id="resume-banner" class="resume-banner">
+              <span>上次还有未答完的题目（已答 <strong id="resume-count">0</strong>/15 题）</span>
+              <button id="btn-resume" type="button" class="resume-link">继续做题 →</button>
+            </div>
+          </div>
+
+          <p class="disclaimer-note">
+            注：本测试定位于趣味情感魅力探索，非严肃婚恋评估，亦非专业心理诊断。按第一直觉选最准哦。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. 逐题作答页 ==================== -->
+    <section id="view-quiz" class="view-section" aria-live="polite">
+      <div class="velvet-card">
+        <div class="velvet-card-inner">
+          <div class="quiz-progress-panel">
+            <div class="quiz-meta-row">
+              <span id="chapter-badge" class="chapter-badge">Part 01 · 聊天信号</span>
+              <span class="progress-counter">
+                <strong><span id="current-q-num">01</span></strong> / <span id="total-q-num">15</span>
+              </span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="15">
+              <div id="progress-fill" class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div id="question-stage" class="question-stage">
+            <div>
+              <h2 id="question-title" class="question-title"></h2>
+              <div id="options-list" class="options-list"></div>
+            </div>
+
+            <div class="quiz-nav-bar">
+              <button id="btn-prev" type="button" class="nav-link-btn" disabled>
+                ← 上一题
+              </button>
+              <span class="quiz-keyboard-tip">支持按键 A-D 快捷选择</span>
+              <button id="btn-next" type="button" class="nav-link-btn" disabled>
+                下一题 →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. 心动磁场计算过渡页 ==================== -->
+    <section id="view-computing" class="view-section" aria-live="polite">
+      <div class="velvet-card">
+        <div class="velvet-card-inner computing-box">
+          <div class="heart-pulse-orb">✦</div>
+          <h2 class="computing-title">正在捕捉你的心动引力场…</h2>
+          <p class="computing-sub">解析六维个人魅力信号，匹配最容易为你沦陷的那个人</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. 结果海报页 ==================== -->
+    <section id="view-result" class="view-section" aria-labelledby="res-name">
+      <article id="poster-card" class="poster-card">
+        <div class="poster-inner">
+          <div class="poster-top-meta">
+            <span>L’AMOUR ARCHIVE · 心动引力报告</span>
+            <span>《测测你最容易吸引什么样的恋人》</span>
+          </div>
+
+          <div class="character-hero">
+            <div class="character-identity">
+              <div class="match-kicker">
+                <span>✦ 最容易栽在你手里的恋人</span>
+                <span id="res-match-pct" class="match-badge-pct">磁场契合度 96%</span>
+              </div>
+              <h2 id="res-name" class="character-name">爹系/姐系引导型恋人</h2>
+              <span id="res-courtesy" class="character-courtesy">成熟控场 · 嘴硬心软的兜底掌舵人</span>
+              <div id="res-verdict" class="character-verdict">表面淡定挑剔 · 实则把你宠成小孩</div>
+            </div>
+
+            <div id="res-seal" class="character-seal-pill" aria-hidden="true">引导系</div>
+          </div>
+
+          <div id="res-tags" class="character-tags"></div>
+
+          <blockquote class="quote-scroll-box">
+            <p id="res-quote" class="quote-scroll-text"></p>
+          </blockquote>
+
+          <!-- 六维魅力雷达图面板 -->
+          <div class="radar-panel">
+            <div id="res-radar-wrap" class="radar-svg-wrap"></div>
+            <div>
+              <div id="res-dim-bars" class="dim-bars-list"></div>
+              <div id="res-runner-up" class="runner-up-note"></div>
+            </div>
+          </div>
+
+          <!-- 深度魅力解析模块 -->
+          <div class="analysis-sections">
+            <div class="analysis-block">
+              <h3 class="analysis-heading">
+                <span class="heading-sparkle">✨</span>
+                <span>你自身散发的致命吸引力</span>
+              </h3>
+              <p id="res-traits" class="analysis-body"></p>
+            </div>
+
+            <div class="analysis-block">
+              <h3 class="analysis-heading">
+                <span class="heading-sparkle">💘</span>
+                <span>为什么这类人最容易对你上头</span>
+              </h3>
+              <p id="res-reason" class="analysis-body"></p>
+            </div>
+
+            <div class="analysis-block">
+              <h3 class="analysis-heading">
+                <span class="heading-sparkle">🍬</span>
+                <span>在一起后的相处隐藏甜点</span>
+              </h3>
+              <p id="res-advantage" class="analysis-body"></p>
+            </div>
+          </div>
+
+          <!-- 趣味彩蛋 · 心动擦火花指南 -->
+          <div class="easter-egg-panel">
+            <h3 class="analysis-heading">
+              <span class="heading-sparkle">🎬</span>
+              <span>趣味彩蛋 · 恋爱擦火花指南</span>
+            </h3>
+            <div class="easter-grid">
+              <div class="easter-item">
+                <div class="easter-label">🥂 最容易擦出火花的场景</div>
+                <div id="res-scene" class="easter-val"></div>
+              </div>
+              <div class="easter-item">
+                <div class="easter-label">💓 最戳你的高甜相处瞬间</div>
+                <div id="res-sweetspot" class="easter-val"></div>
+              </div>
+              <div class="easter-item">
+                <div class="easter-label">💡 专属恋爱避雷小锦囊</div>
+                <div id="res-warning" class="easter-val"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 海报底部扫码栏 -->
+          <footer class="poster-footer">
+            <div class="poster-footer-left">
+              <div class="poster-footer-cta">扫码测测你最容易吸引什么样的恋人</div>
+              <div class="poster-footer-sub">15道大白话相处直觉题 · 解锁你的六维心动磁场与命定桃花</div>
+              <span class="poster-footer-pill">✦ 长按或扫码参与测试</span>
+            </div>
+            <div class="poster-qr-frame">
+              <div id="res-qr-box" class="poster-qr-box" aria-label="测试网页二维码"></div>
+              <span class="poster-qr-caption">扫码测心动引力</span>
+            </div>
+          </footer>
+        </div>
+      </article>
+
+      <!-- 海报外部操作栏 -->
+      <div class="result-actions-bar">
+        <button id="btn-save-poster" type="button" class="btn-primary">
+          保存带二维码高清海报（适合发小红书/朋友圈）
+        </button>
+        <button id="btn-copy-text" type="button" class="btn-secondary">
+          复制专属心动文案
+        </button>
+        <button id="btn-clean-shot" type="button" class="btn-secondary">
+          开启纯净截图模式
+        </button>
+        <button id="btn-restart" type="button" class="btn-secondary" style="grid-column: 1 / -1;">
+          重新测试一次
+        </button>
+      </div>
+
+      <!-- 二维码跳转链接自定义 -->
+      <div id="qr-url-config" class="qr-url-config">
+        <div>🔗 <strong>海报二维码跳转网址</strong>（部署上线后会自动识别公网地址，也可手动填入你的分享链接）：</div>
+        <div class="qr-url-row">
+          <input id="qr-url-input" type="url" class="qr-url-input" placeholder="例如 https://你的网站域名.com" />
+          <button id="btn-update-qr" type="button" class="qr-url-btn">更新二维码</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="clean-shot-toast" class="clean-shot-toast">
+    已隐藏操作按钮，可直接截屏分享 · 点击任意处恢复
+  </div>
+
+  <div id="toast-msg" class="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- 高清海报预览弹窗 -->
+  <div id="poster-modal" class="poster-modal" role="dialog" aria-modal="true" aria-labelledby="poster-modal-title">
+    <div class="poster-modal-box">
+      <div class="poster-modal-header">
+        <span id="poster-modal-title">专属心动档案海报已生成</span>
+        <button id="poster-modal-close" type="button" class="poster-modal-close" aria-label="关闭预览">×</button>
+      </div>
+      <div class="poster-modal-body">
+        <img id="poster-modal-img" alt="最容易吸引的恋人档案海报" />
+      </div>
+      <div class="poster-modal-tip">
+        电脑端已自动下载 PNG；手机端可长按上方图片保存至相册
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/qrcode.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
